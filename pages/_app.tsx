@@ -2,6 +2,7 @@ import React from 'react';
 import { AppProps } from 'next/app';
 import Layout from '../components/Layout';
 import '../styles/app.scss';
+import '../styles/globals.scss'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (

@@ -1,55 +1,71 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './styles.module.scss';
 
+const openTag = "<";
+const closeTag = "/>";
+const logo = "RO "
 
 function Navbar() {
+  const [visible, setVisible] = useState(false);
+
   return (
     <>
-    <div className={styles.stickyContainer} >
-      <nav className={styles.navbar}>
+      <div className={styles.stickyContainer} >
 
-      <div className={styles.logo}>
-         <h4>Logo</h4>
-        </div>
-        <div className={styles.navLinks} >
+        <nav className={styles.navContainer}>
+
+          <div className={styles.logo}>
+            <p>{openTag}{logo}{closeTag}</p>
+          </div>
+
+          <div className={styles.navBar} >
 
 
-        <ul className={styles.links}>
-          <li>
-            
-            <Link href="/" className={styles.navLinks} scroll={true}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/demo" className={styles.navLinks}>
-             Book a demo
-            </Link>
-          </li>
-          <li>
-            <Link href="/tryItOut" className={styles.navLinks}>
-             Try It Out
-            </Link>
-          </li>
-          <li>
-            <Link href="/blog" className={styles.navLinks}>
-              Newsletter
-            </Link>
-          </li>
-          <li>
-            {/* links to <div id="newsletter">...</div>  */}
-            <Link href="/#contact" className={styles.navLinks}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-        
-        </div>
+            <ul className={styles.links}>
+              <li>
 
-    
+                <Link href="/" className={styles.navLinks} scroll={true}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/demo" className={styles.navLinks}>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/tryItOut" className={styles.navLinks}>
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/#contact" className={styles.navLinks}>
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <a href="" className={styles.navLink} onClick={() => setVisible(true)} >More</a>
+                {visible &&
+                  <ul className={styles.dropdown}>
+                    <li><Link href="/demo" className={styles.navLinks}>
+                      Work
+                    </Link></li>
+                    <li><Link href="/blog" className={styles.navLinks}>
+                      Blog
+                    </Link></li>
+                  </ul>
+                }
+              </li>
 
-      </nav>
+            </ul>
+
+          </div>
+
+
+
+        </nav>
+
       </div>
     </>
   );
