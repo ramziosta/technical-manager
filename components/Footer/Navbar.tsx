@@ -10,7 +10,7 @@ function FooterNavbar() {
 
         <ul className={styles.list}>
           <li>
-            <Link className={styles.links} href="/" >Neolocus</Link>
+            <Link className={styles.links} href="/" >Ramzi Osta</Link>
           </li>
           <li>
             <Link className={styles.links} href="/about" >About</Link>
@@ -18,10 +18,10 @@ function FooterNavbar() {
           <li>
             <Link className={styles.links} href="/demo" >Book a Demo</Link>
           </li>
-     
+
         </ul>
         <ul className={styles.list}>
-        <li>
+          <li>
             <Link className={styles.links} href="/newsletter" >Newsletter</Link>
           </li>
           <li>

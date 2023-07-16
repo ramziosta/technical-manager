@@ -11,22 +11,22 @@ export default function Footer() {
         <div className={styles.left} >
 
           <div className={styles.logo} >
-          <h4>Logo</h4>
+            <h4>Logo</h4>
           </div>
 
           <div className={styles.contactInfo}>
-          <p>Contact Info</p>
+            <p>Contact Info</p>
             <p>Contact Info....</p>
           </div>
 
           <div className={styles.address}>
-            <p>Neolocus</p>
+            <p>Ramzi Osta</p>
             <p>Address 1</p>
             <p>Address 2</p>
             <p>Zip Code</p>
           </div>
 
-          <p>© Copyright 2023 NeoLocus</p>
+          <p>© Copyright 2023 Ramzi Osta</p>
 
         </div>
 
