@@ -4,40 +4,85 @@ import styles from './styles.module.scss';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    return (
 
-          <nav className={styles.navbar}>
+        <nav className={styles.navbar}>
             <h1 className={styles.logo}>RO</h1>
 
             <div onClick={() => setIsOpen(!isOpen)} className={styles.hamburger}>
                 <div className={isOpen ? `${styles.bar} ${styles.bar1}` : `${styles.bar}`}></div>
                 <div className={isOpen ? `${styles.bar} ${styles.bar2}` : `${styles.bar}`}></div>
                 <div className={isOpen ? `${styles.bar} ${styles.bar3}` : `${styles.bar}`}></div>
-            </div>
+                <div className={isOpen ? `${styles.mobileLinks}` : `${styles.mobileClosed}`} >
+                    <ul className={styles.navLinks}>
+                        <li>
+                            <Link href="/">Home</Link>
+                        </li>
 
-            <ul className={isOpen ? `${styles.nav_links} ${styles.show_nav}` : `${styles.nav_links}`}>
-                <li className={styles.nav_item}>
-                    <Link href="/">Home<div className={styles.underline}></div></Link>
-                </li>
-                <li className={styles.nav_item}>
-                    <Link href="/about">About<div className={styles.underline}></div></Link>
-                </li>
-                <li className={styles.nav_item}>
-                    <Link href="/services">Services<div className={styles.underline}></div></Link>
-                </li>
-                <li className={styles.nav_item}>
-                    <Link href="/contact">Contact<div className={styles.underline}></div></Link>
-                </li>
-                <li className={styles.nav_item}>
-                    <div className={styles.dropdown}>
-                        <Link href="/more" className={styles.more}>More</Link>
-                        <div className={styles.dropdown_content}>
-                            <Link href="/work" className={styles.mobileView}>Work<div className={styles.underline}></div></Link>
-                            <Link href="/blog" className={styles.mobileView}>Blog<div className={styles.underline}></div></Link>
-                            <Link href="/shop" className={styles.mobileView}>Shop<div className={styles.underline}></div></Link>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                        <li>
+                            <Link href="/about">About</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/services">Services</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/contact">Contact</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/work">Work</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/blog">Blog</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/shop">Shop</Link>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div className={styles.mainNavigation} >
+                <ul className={styles.navLinks}>
+                    <li>
+                        <Link href="/">Home</Link>
+                    </li>
+
+                    <li>
+                        <Link href="/about">About</Link>
+                    </li>
+
+                    <li>
+                        <Link href="/services">Services</Link>
+                    </li>
+
+                    <li>
+                        <Link href="/contact">Contact</Link>
+                    </li>
+
+                    <li>
+                        <p className={styles.more}>More</p>
+                        <ul className={styles.dropdown}>
+                            <li>
+                                <Link href="/work">Work</Link>
+                            </li>
+
+                            <li>
+                                <Link href="/blog">Blog</Link>
+                            </li>
+
+                            <li>
+                                <Link href="/shop">Shop</Link>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
 
         </nav>
     );

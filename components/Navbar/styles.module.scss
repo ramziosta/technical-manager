@@ -1,117 +1,125 @@
 //  THe navbar: sticky is the main container that holds all the components
 
 .stickyContainer {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff; 
-    z-index: 100; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
- 
-    a {
-        text-decoration: none;
-        color: inherit
-    }
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 // app logo
 .logo {
-    font-family: var(--font-base)
+  font-family: var(--font-base);
 }
 
 //the navigation container, including the links and the hamburger menu
 .navContainer {
-    display: flex;
-    flex-direction: row;
-    // justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
+
 // mobile view hamburger menu
 .hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 10;
-  }
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
 //main css for all the bars
-  .bar {
-    width: 2rem;
-    height: 0.25rem;
-    background-color: #db0000;
-    border-radius: 10px;
-    transition: all 0.3s linear;
-  }
-  //css for each specific bar that makes up the hamburger menu: top mid bottom 
-  .bar1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  
-  .bar2 {
-    opacity: 0;
-  }
-  
-  .bar3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-  
-// the main navigation
-.mainNavigation{
-    display: flex;
-    flex-direction: row;
+.bar {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #db0000;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+//css for each specific bar that makes up the hamburger menu: top mid bottom
+.bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
 
-    li{
-        list-style-type: none;
-    }
-    //hides the dropdown menu for the More Link
-    .dropdown {
-        display: none;
-    }
-  
+.bar2 {
+  opacity: 0;
+}
+
+.bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+// mobilenavigation
+
+.mobileLinks {
+  position: absolute;
+  top: 100px;
+}
+
+.mobileClosed {
+  display: none;
+}
+
+
+// the main navigation
+.mainNavigation {
+  display: flex;
+  flex-direction: row;
+
+  li {
+    list-style-type: none;
+  }
+  //hides the dropdown menu for the More Link
+  .dropdown {
+   display: none;
+ }
 }
 
 .navLinks {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .more {
-    color: red;
+  color: red;
 }
 
-//when a user hovers over more, the dropdown appears 
-li:hover .dropdown{
-    position: absolute;
-    display: block;
-    z-index: 9999;
+//when a user hovers over more, the dropdown appears
+li:hover .dropdown {
+  position: absolute;
+  display: block;
+  z-index: 9999;
 }
 
-
-
-
-
-
-// mobile view css settings]
+// mobile view css settings
 
 @media (max-width: 768px) {
-    // .more {
-    //     display: none;
-    // }
 
-.dropdown {
-        display: block;
-    }
+  .mainNavigation {
+ display: none;
+    
+  }
+ 
+ .dropdown {
+    display: block;
+  }
 
-    .hamburger {
-        display: flex;
-    }
+  .hamburger {
+    display: flex;
+  }
 }
