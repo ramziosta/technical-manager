@@ -11,7 +11,15 @@
 // app logo
 .logo {
   margin-left: 50px;
+  text-decoration: none;
+  color: var(--black);
+  font-family: var(--font-family-pp-neue-montreal-bold);
 }
+
+.logo:hover {
+  color: var(--red);
+}
+
 
 // mobile view hamburger menu
 .hamburger {
@@ -112,6 +120,11 @@ li:hover .dropdown {
   position: absolute;
   display: block;
   z-index: 9999;
+}
+
+.more:hover {
+  color: var(--red);
+  font-family: var(--font-family-pp-neue-montreal-bold);
 }
 
 // mobile view css settings

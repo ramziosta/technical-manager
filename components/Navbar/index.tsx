@@ -4,12 +4,14 @@ import styles from './styles.module.scss';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const left ="<";
+    const right =" />";
     return (
 
         <nav className={styles.navBar}>
 
             <div className={styles.logo} >
-                <h1 className={styles.logo}>RO</h1>
+                <Link href="/" className={styles.logo}>{left}RO{right}</Link>
             </div>
 
             <div className={styles.menu}>
