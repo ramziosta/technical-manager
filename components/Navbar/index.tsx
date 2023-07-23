@@ -3,9 +3,11 @@ import Link from 'next/link';
 import styles from './styles.module.scss';
 
 const Navbar = () => {
+
     const [isOpen, setIsOpen] = useState(false);
-    const left ="<";
-    const right =" />";
+    const left = "<";
+    const right = " />";
+
     return (
 
         <nav className={styles.navBar}>
@@ -21,7 +23,7 @@ const Navbar = () => {
                     <div className={isOpen ? `${styles.bar} ${styles.bar3}` : `${styles.bar}`}></div>
                     <div className={isOpen ? `${styles.mobileLinks}` : `${styles.mobileClosed}`} >
 
-                    <ul className={styles.navLinks}>
+                        <ul className={styles.mobileNavLinks}>
                             <li>
                                 <Link href="/">Home</Link>
                             </li>
@@ -49,50 +51,51 @@ const Navbar = () => {
                             <li>
                                 <Link href="/shop">Shop</Link>
                             </li>
-                    </ul>
+                        </ul>
 
                     </div>
                 </div>
+            </div>
 
-                <div className={styles.mainNavigation} >
-                    <ul className={styles.navLinks}>
-                        <li>
-                            <Link href="/">Home</Link>
-                        </li>
+            <div className={styles.mainNavigation} >
+                <ul className={styles.navLinks}>
+                    <li>
+                        <Link href="/">Home</Link>
+                    </li>
 
-                        <li>
-                            <Link href="/about">About</Link>
-                        </li>
+                    <li>
+                        <Link href="/about">About</Link>
+                    </li>
 
-                        <li>
-                            <Link href="/services">Services</Link>
-                        </li>
+                    <li>
+                        <Link href="/services">Services</Link>
+                    </li>
 
-                        <li>
-                            <Link href="/contact">Contact</Link>
-                        </li>
+                    <li>
+                        <Link href="/contact">Contact</Link>
+                    </li>
 
-                        <li>
-                            <p className={styles.more}>More</p>
-                            <ul className={styles.dropdown}>
-                                <li>
-                                    <Link href="/work">Work</Link>
-                                </li>
+                    <li>
+                        <p className={styles.more}>More</p>
+                        <ul className={styles.dropdown}>
+                            <li>
+                                <Link href="/work">Work</Link>
+                            </li>
 
-                                <li>
-                                    <Link href="/blog">Blog</Link>
-                                </li>
+                            <li>
+                                <Link href="/blog">Blog</Link>
+                            </li>
 
-                                <li>
-                                    <Link href="/shop">Shop</Link>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </div>
+                            <li>
+                                <Link href="/shop">Shop</Link>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
 
             </div>
+
+
 
 
         </nav>
