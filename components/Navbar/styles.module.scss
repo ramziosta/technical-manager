@@ -1,34 +1,16 @@
 //  THe navbar: sticky is the main container that holds all the components
-
-.stickyContainer {
-  position: sticky;
-  top: 0;
-  background-color: #ffffff;
-  z-index: 100;
+.navBar {
+  font-family: var(--font-family-pp-neue-montreal-book);
+  font-size: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+  margin-top: 20px;
 }
 
 // app logo
 .logo {
-  font-family: var(--font-base);
-}
-
-//the navigation container, including the links and the hamburger menu
-.navContainer {
-  display: flex;
-  flex-direction: row;
-  // justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  margin-left: 50px;
 }
 
 // mobile view hamburger menu
@@ -75,28 +57,54 @@
   display: none;
 }
 
-
 // the main navigation
 .mainNavigation {
   display: flex;
   flex-direction: row;
+  // margin-right: 200px;
 
   li {
     list-style-type: none;
+    width: 130px;
+  }
+
+  li a {
+    display: block;
+    text-decoration: none;
+    color: var(--black);
+  }
+  li a:hover {
+    font-family: var(--font-family-pp-neue-montreal-bold);
   }
   //hides the dropdown menu for the More Link
   .dropdown {
-   display: none;
- }
+    display: none;
+    li{
+      margin: 15px 0px;
+    }
+  }
+}
+
+.mainNavigation li a:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 5px;
+  background: var(--red);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+
+}
+
+.mainNavigation li a:hover:after {
+  transform: scaleX(1);
 }
 
 .navLinks {
+  color: var(--black);
   display: flex;
   flex-direction: row;
-}
-
-.more {
-  color: red;
+  justify-content: space-evenly;
 }
 
 //when a user hovers over more, the dropdown appears
@@ -109,13 +117,18 @@ li:hover .dropdown {
 // mobile view css settings
 
 @media (max-width: 768px) {
+  .logo {
+    margin-left: 10px;
+  }
+  .hamburger {
+    margin-right: 20px;
+  }
 
   .mainNavigation {
- display: none;
-    
+    display: none;
   }
- 
- .dropdown {
+
+  .dropdown {
     display: block;
   }
 
