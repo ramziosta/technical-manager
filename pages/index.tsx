@@ -13,13 +13,13 @@ const Home = () => {
         <div className={styles.leftSection}>
           <div className={styles.mainHeader} >
             <h1>Ramzi Osta</h1>
-            <h2>Fullstack Web Developer</h2>
-            <h3>Technical Manager</h3>
+            <h2 className={styles.fullStackDeveloper}>Fullstack Web Developer</h2>
+            <h3 className={styles.technicalManager}>Technical Manager</h3>
           </div>
 
           <div className={styles.mainParagraph}>
             <p>
-              Full stack web development and management services for entrepreneurs  startups and small businesses to establish online presence and streamline operations for success in today&apos;s digital landscape.
+              Full stack web development and management services for entrepreneurs  startups and small businesses to establish online presence and streamline operations for success in today&apos;s <span className={styles.underline} >digital landscape.</span> 
             </p>
           </div>
           <div className={styles.cta}>

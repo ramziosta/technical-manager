@@ -1,38 +1,91 @@
 //homepage
 .hero {
+  margin: 20px;
+  padding: 20px;
   display: flex;
 }
+
 .leftSection {
+  border: red solid 2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
 }
 
+
 .mainHeader {
+
   font-family: var(--font-family-pp-neue-montreal-bold);
+
   h1 {
     font-size: var(--font-size-ramzi);
+    letter-spacing: 5px;
   }
+
   h2 {
     font-size: var(--font-size-xxl);
   }
+
   h3 {
+    margin: 10px 0px;
     font-size: var(--font-size-xl);
   }
+
 }
 
-.ctaButton a {
+.mainParagraph {
+  margin: 10px 0px;
+  width: 400px;
+  font-family: var(--font-family-merriweather);
+  font-size: var(--font-size-m);
+  line-height: 30px;;
+}
+
+.underline {
+  position: relative;   
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  height: 1em;
+  bottom: -.6em;
+  background-image: url(../public/assets/underline.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+} 
+
+.cta {
+  margin: 10px 0px;  
+  font-size: var(--font-size-xl);
+  font-family: var(--font-family-pp-neue-montreal-bold);
+  letter-spacing: 5px;
+}
+
+.ctaButton {
+  margin: 10px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 50px;
-  border: 4px solid var(--black);
+  width: 300px;
+  height: 80px;
+  border: 8px solid var(--black);
+}
+.ctaButton a {
+  text-decoration: none;
+  font-size: var(--font-size-l);
+  font-family: var(--font-family-pp-neue-montreal-bold);
+  color: var(--red);
+  letter-spacing: 4px;
 }
 
 .rightSection {
+  border: red solid 2px;
   display: flex;
   flex: 1;
 }
@@ -40,3 +93,4 @@
 .image {
   margin: 0 auto;
 }
+
