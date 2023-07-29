@@ -1,12 +1,16 @@
 //homepage
+// screen size 1440 x 900 and up
+
 .hero {
-  margin: 20px;
+  margin: 40px 20px;
   padding: 20px;
   display: flex;
+  flex-direction: row;
 }
 
 .leftSection {
-  border: red solid 2px;
+  margin-left: 55px;
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +25,7 @@
   h1 {
     font-size: var(--font-size-ramzi);
     letter-spacing: 5px;
+    margin: 10px 0px;
   }
 
   h2 {
@@ -36,34 +41,26 @@
 
 .mainParagraph {
   margin: 10px 0px;
-  width: 400px;
+  width: 410px;
   font-family: var(--font-family-merriweather);
   font-size: var(--font-size-m);
   line-height: 30px;;
 }
 
-.underline {
-  position: relative;   
+.underline{
+  padding-bottom: 10px;
+  background: url('../public/assets/underline2.png') repeat-x bottom;
+  background-size: 100% 25px;
+  background-position: left bottom;
+  font-style: italic;
 }
 
-.underline::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  height: 1em;
-  bottom: -.6em;
-  background-image: url(../public/assets/underline.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-} 
 
 .cta {
   margin: 10px 0px;  
   font-size: var(--font-size-xl);
   font-family: var(--font-family-pp-neue-montreal-bold);
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 
 .ctaButton {
@@ -85,8 +82,10 @@
 }
 
 .rightSection {
-  border: red solid 2px;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
 }
 
@@ -94,3 +93,20 @@
   margin: 0 auto;
 }
 
+@media screen and (device-width: 768px) and (device-height: 1024px) {
+  /* CSS for iPad */
+
+  
+
+}
+
+@media screen and (device-width: 1024px) and (device-height: 1366px) {
+  /* CSS for iPad Pro */
+
+  .hero {
+    display: block;
+    flex-direction: column;
+   }
+
+
+}

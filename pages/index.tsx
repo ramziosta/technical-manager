@@ -19,7 +19,7 @@ const Home = () => {
 
           <div className={styles.mainParagraph}>
             <p>
-              Full stack web development and management services for entrepreneurs  startups and small businesses to establish online presence and streamline operations for success in today&apos;s <span className={styles.underline} >digital landscape.</span> 
+              Digital consulting and management services for entrepreneurs  startups and small businesses to establish online presence and streamline operations for success in today&apos;s <span className={styles.underline} >digital landscape.</span> 
             </p>
           </div>
           <div className={styles.cta}>
