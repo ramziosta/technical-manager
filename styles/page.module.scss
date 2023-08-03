@@ -2,7 +2,7 @@
 // screen size 1440 x 900 and up
 
 .hero {
-  margin: 40px 20px;
+  margin: 40px 0px;
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -30,11 +30,13 @@
 
   h2 {
     font-size: var(--font-size-xxl);
+  
   }
 
   h3 {
-    margin: 10px 0px;
+    margin: .8rem 0px 1.5rem 0px;
     font-size: var(--font-size-xl);
+
   }
 
 }
@@ -57,7 +59,7 @@
 
 
 .cta {
-  margin: 10px 0px;  
+  margin: 30px 0px;  
   font-size: var(--font-size-xl);
   font-family: var(--font-family-pp-neue-montreal-bold);
   letter-spacing: 4px;
@@ -72,6 +74,13 @@
   width: 300px;
   height: 80px;
   border: 8px solid var(--black);
+  
+
+  &:hover {
+    border-color: var(--black2);
+    background-color: var(--grey6);
+    transition: background-color 0.3s ease-in-out;
+  }
 }
 .ctaButton a {
   text-decoration: none;
@@ -79,10 +88,16 @@
   font-family: var(--font-family-pp-neue-montreal-bold);
   color: var(--red);
   letter-spacing: 4px;
+
+  &:hover {
+    color: var(--dark-red);
+  }
 }
 
-.rightSection {
 
+
+.rightSection {
+background-color: var(--grey6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,20 +108,41 @@
   margin: 0 auto;
 }
 
-@media screen and (device-width: 768px) and (device-height: 1024px) {
-  /* CSS for iPad */
+@media (max-width: 1024px) {
+  .hero {
+    margin: 40px 50px;
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+.mainHeader {
+  h1{
+    font-size: var(--font-size-ramzi-ipad);
+    letter-spacing: 8px;
+  }
+}
+  .mainParagraph {
+    width: 500px; 
+  }
 
-  
+  .image {
+    margin: 2rem;
+  }
+}
+
+
+@media (min-width:413px) and (max-width:768px){
+  /* CSS for iPad */
+.rightSection {
+  background-color: var(--grey1);
+}
 
 }
 
-@media screen and (device-width: 1024px) and (device-height: 1366px) {
-  /* CSS for iPad Pro */
-
-  .hero {
-    display: block;
-    flex-direction: column;
-   }
-
-
+@media (max-width: 412px){
+  .rightSection {
+    background-color: green;
+  }
 }
