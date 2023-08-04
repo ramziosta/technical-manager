@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <>
       <div className={styles.hero}>
+        
         <div className={styles.leftSection}>
           <div className={styles.container}>
             <div className={styles.mainHeader}>

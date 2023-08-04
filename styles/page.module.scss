@@ -10,16 +10,13 @@
 
 .leftSection {
   margin-left: 55px;
- 
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
 }
 
-
 .mainHeader {
-
   font-family: var(--font-family-pp-neue-montreal-bold);
 
   h1 {
@@ -30,15 +27,12 @@
 
   h2 {
     font-size: var(--font-size-xxl);
-  
   }
 
   h3 {
-    margin: .8rem 0px 1.5rem 0px;
+    margin: 0.8rem 0px 1.5rem 0px;
     font-size: var(--font-size-xl);
-
   }
-
 }
 
 .mainParagraph {
@@ -46,23 +40,22 @@
   width: 410px;
   font-family: var(--font-family-merriweather);
   font-size: var(--font-size-m);
-  line-height: 30px;;
+  line-height: 30px;
 }
 
-.underline{
+.underline {
   padding-bottom: 10px;
-  background: url('../public/assets/underline2.png') repeat-x bottom;
+  background: url("../public/assets/underline2.png") repeat-x bottom;
   background-size: 100% 25px;
   background-position: left bottom;
   font-style: italic;
 }
 
-
 .cta {
-  margin: 30px 0px;  
-  font-size: var(--font-size-xl);
+  margin: 30px 0px;
+  font-size: var(--font-size-xxl);
   font-family: var(--font-family-pp-neue-montreal-bold);
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 .ctaButton {
@@ -74,7 +67,6 @@
   width: 300px;
   height: 80px;
   border: 8px solid var(--black);
-  
 
   &:hover {
     border-color: var(--black2);
@@ -94,10 +86,8 @@
   }
 }
 
-
-
 .rightSection {
-background-color: var(--grey6);
+  background-color: var(--grey6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,14 +107,14 @@ background-color: var(--grey6);
     display: flex;
     flex-direction: column-reverse;
   }
-.mainHeader {
-  h1{
-    font-size: var(--font-size-ramzi-ipad);
-    letter-spacing: 8px;
+  .mainHeader {
+    h1 {
+      font-size: var(--font-size-ramzi-ipad);
+      letter-spacing: 8px;
+    }
   }
-}
   .mainParagraph {
-    width: 500px; 
+    width: 500px;
   }
 
   .image {
@@ -132,16 +122,42 @@ background-color: var(--grey6);
   }
 }
 
-
-@media (min-width:413px) and (max-width:768px){
+@media (min-width: 413px) and (max-width: 768px) {
   /* CSS for iPad */
-.rightSection {
-  background-color: var(--grey1);
+  .rightSection {
+    background-color: var(--grey1);
+  }
 }
 
-}
+@media (max-width: 430px) {
+  .hero {
+    margin: 0px auto;
+  }
 
-@media (max-width: 412px){
+  .leftSection {
+    margin-left: 0px;
+  }
+
+  .mainParagraph {
+    width: 90%;
+  }
+
+  .cta {
+    font-size: var(--font-size-xxl);
+  }
+
+  .mainHeader {
+    h1 {
+      font-size: var(--font-size-mobilePhone);
+    }
+    h2 {
+      font-size: var(--font-size-xl);
+    }
+    h3 {
+      font-size: var(--font-size-l);
+    }
+  }
+
   .rightSection {
     background-color: green;
   }
