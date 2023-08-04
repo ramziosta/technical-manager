@@ -49,6 +49,7 @@
   background-size: 100% 25px;
   background-position: left bottom;
   font-style: italic;
+  font-weight: bold;
 }
 
 .cta {
@@ -74,6 +75,7 @@
     transition: background-color 0.3s ease-in-out;
   }
 }
+
 .ctaButton a {
   text-decoration: none;
   font-size: var(--font-size-l);
@@ -140,13 +142,18 @@
 
   .mainParagraph {
     width: 90%;
+    text-align: center;
   }
 
   .cta {
     font-size: var(--font-size-xxl);
+    text-align: center;
   }
-
+.ctaButton{
+  margin: 0 auto;
+}
   .mainHeader {
+    text-align: center;
     h1 {
       font-size: var(--font-size-mobilePhone);
     }
@@ -159,6 +166,7 @@
   }
 
   .rightSection {
-    background-color: green;
+    margin: 1rem 0px;
+    
   }
 }

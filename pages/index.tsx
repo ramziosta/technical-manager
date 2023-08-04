@@ -20,16 +20,16 @@ const Home = () => {
             </div>
 
             <div className={styles.mainParagraph}>
+
               <p>
                 Digital consulting and management services for entrepreneurs startups and small businesses to establish online presence and streamline operations for success in today&apos;s <span className={styles.underline} >digital landscape.</span>
               </p>
+              
             </div>
 
             <div className={styles.cta}>
               <h4>Elevate your business now!</h4>
             </div>
-
-            
 
           </div>
           <div className={styles.ctaButton}>
