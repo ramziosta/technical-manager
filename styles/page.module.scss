@@ -89,7 +89,6 @@
 }
 
 .rightSection {
-  background-color: var(--grey6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,15 +99,22 @@
   margin: 0 auto;
 }
 
+//ipad pro
 @media (max-width: 1024px) {
   .hero {
-    margin: 40px 50px;
+    margin: 0 auto;
     flex-direction: column;
   }
+
+  .cta {
+    font-size: var(--font-size-xxxl);
+  }
+
   .container {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .mainHeader {
     h1 {
       font-size: var(--font-size-ramzi-ipad);
@@ -116,20 +122,39 @@
     }
   }
   .mainParagraph {
-    width: 500px;
+    font-size: var(--font-size-xl);
+    width: 100%;
   }
+
 
   .image {
     margin: 2rem;
   }
 }
 
+//ipad
 @media (min-width: 413px) and (max-width: 768px) {
-  /* CSS for iPad */
-  .rightSection {
-    background-color: var(--grey1);
-  }
+ .hero{
+  margin : 0 auto;
+ }
+.cta {
+  font-size: var(--font-size-mobilePhone);
 }
+
+.ctaButton {
+  position: relative;
+  
+}
+.container {
+  margin: 0 auto; 
+}
+.image {
+  position: relative;
+  
+}
+}
+
+// mobile iphone pro 12/13 galaxy s20 
 
 @media (max-width: 430px) {
   .hero {
@@ -170,3 +195,5 @@
     
   }
 }
+
+

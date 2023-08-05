@@ -15,7 +15,15 @@ const Navbar = () => {
             <div className={styles.logo} >
                 <Link href="/" className={styles.logo}>{left}RO{right}</Link>
             </div>
-
+            <div className={styles.circles}>
+          <div className={styles.circle1}>
+            <div className={styles.circle2}>
+              <div className={styles.circle3}>
+                <div className={styles.circle4}></div>
+              </div>
+            </div>
+          </div>
+          </div>
             <div className={styles.menu}>
                 <div onClick={() => setIsOpen(!isOpen)} className={styles.hamburger}>
                     <div className={isOpen ? `${styles.bar} ${styles.bar1}` : `${styles.bar}`}></div>

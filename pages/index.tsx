@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <div className={styles.hero}>
-        
+
         <div className={styles.leftSection}>
           <div className={styles.container}>
             <div className={styles.mainHeader}>
@@ -24,7 +24,7 @@ const Home = () => {
               <p>
                 Digital consulting and management services for entrepreneurs startups and small businesses to establish online presence and streamline operations for success in today&apos;s <span className={styles.underline} >digital landscape.</span>
               </p>
-              
+
             </div>
 
             <div className={styles.cta}>
@@ -33,10 +33,12 @@ const Home = () => {
 
           </div>
           <div className={styles.ctaButton}>
-              <Link href="/contact">
-               Contact Me
-              </Link>
-            </div>
+            <Link href="/contact">
+              Contact Me
+            </Link>
+          </div>
+      
+       
         </div>
 
         <div className={styles.rightSection}>
