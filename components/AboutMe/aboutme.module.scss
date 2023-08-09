@@ -1,0 +1,116 @@
+.container {
+margin-top: 150px;
+  font-family: var(--font-family-pp-neue-montreal-bold);
+  letter-spacing: 2px;
+}
+
+.aboutHeader {
+  margin: 40px 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 650px;
+}
+
+.leftSection {
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.info {
+  position: relative;
+  top: -200px;
+}
+
+.fa {
+  padding: 0.2rem 1rem;
+  width: 1rem;
+}
+
+.who,
+.what,
+.where,
+.when {
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+}
+
+.what,
+.where,
+.when {
+  opacity: 0.3;
+}
+
+.w {
+  color: var(--red);
+}
+
+.rightSection {
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.image {
+  position: relative;
+  top: -100px;
+}
+
+.bioElevatorPitch {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftBioSection {
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+}
+
+.bio {
+  font-family: var(--font-family-merriweather-light);
+  font-size: var(--font-size-m);
+  width: 620px;
+  height: 385px;
+  line-height: 30px;
+  position: relative;
+  left: 200px;
+  top: -200px;
+}
+
+.redContainer {
+    height: 250px;
+    width: 370px;
+    background-color: var(--red);
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+}
+
+.bioCTA {
+    position: relative;
+    top: -150px;
+    right: 150px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    background-color: var(--white);
+    border: solid var(--black) 5px;
+    width: 350px;
+    height: 90px;
+    text-align: center;
+    
+    a {
+        text-decoration: none;
+        font-family: var(--font-family-pp-neue-montreal-bold);
+        color: var(--black);
+        font-size: var(--font-size-l);
+    }
+
+}

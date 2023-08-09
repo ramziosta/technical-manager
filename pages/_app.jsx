@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import '../styles/app.scss';
 import '../styles/globals.scss'
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <Layout>
       <Component {...pageProps} />

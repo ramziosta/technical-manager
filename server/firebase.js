@@ -5,9 +5,9 @@ import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCO7BMc2laBm6ON4Cd3IqU_wvRcCkmJBQk",
-  authDomain: "neolocus-49b09.firebaseapp.com",
-  projectId: "neolocus-49b09",
-  storageBucket: "neolocus-49b09.appspot.com",
+  authDomain: "ramziosta-49b09.firebaseapp.com",
+  projectId: "ramziosta-49b09",
+  storageBucket: "ramziosta-49b09.appspot.com",
   messagingSenderId: "748834702727",
   appId: "1:748834702727:web:b782ce1d07f697b4b93f22",
   measurementId: "G-5C4YPRLN4H"
