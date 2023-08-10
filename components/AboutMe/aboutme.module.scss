@@ -1,11 +1,11 @@
 .container {
-margin-top: 150px;
+  margin-top: 150px;
   font-family: var(--font-family-pp-neue-montreal-bold);
   letter-spacing: 2px;
 }
 
 .aboutHeader {
-  margin: 40px 0px;
+  margin: 150px 0px;
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -13,7 +13,7 @@ margin-top: 150px;
 }
 
 .leftSection {
-  margin-left: 150px;
+  margin-left: 110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +37,7 @@ margin-top: 150px;
   display: flex;
   align-items: center;
   line-height: 1.5rem;
+  font-size: var(--font-size-l);
 }
 
 .what,
@@ -59,58 +60,91 @@ margin-top: 150px;
 
 .image {
   position: relative;
-  top: -100px;
+  top: -61px;
 }
 
 .bioElevatorPitch {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  margin: 500px 0px;
 }
 
 .leftBioSection {
-    display: flex;
-    flex-direction:column;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .bio {
-  font-family: var(--font-family-merriweather-light);
-  font-size: var(--font-size-m);
-  width: 620px;
-  height: 385px;
+  font-family: var(--font-family-merriweather);
+  font-size: var(--font-size-l);
   line-height: 30px;
+  width: 680px;
+  height: 400px;
   position: relative;
-  left: 200px;
-  top: -200px;
+  left: 100px;
+  top: -50px;
 }
 
 .redContainer {
-    height: 250px;
-    width: 370px;
-    background-color: var(--red);
-    display: flex;
-    flex-direction: row;
-    justify-content:end;
+  height: 330px;
+  width: 470px;
+  background-color: var(--red);
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  position: relative;
+  top: 300px;
 }
 
 .bioCTA {
-    position: relative;
-    top: -150px;
-    right: 150px;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    background-color: var(--white);
-    border: solid var(--black) 5px;
-    width: 350px;
-    height: 90px;
-    text-align: center;
-    
-    a {
-        text-decoration: none;
-        font-family: var(--font-family-pp-neue-montreal-bold);
-        color: var(--black);
-        font-size: var(--font-size-l);
-    }
+  position: relative;
+  top: 150px;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--white);
+  width: 300px;
+  height: 80px;
+  border: 8px solid var(--black);
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    font-family: var(--font-family-pp-neue-montreal-bold);
+    color: var(--black);
+    font-size: var(--font-size-l);
+  }
+
+  &:hover {
+    border-color: var(--black2);
+    background-color: var(--grey6);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+ 
+}
+
+.card {
+  border: red solid 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; 
+}
+
+.testimonialImage {
+  margin-right: 10px;
+}
+
+.cardText {
 
 }

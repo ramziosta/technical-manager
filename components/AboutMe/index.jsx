@@ -12,24 +12,48 @@ import {
 import portfolio2 from "../../public/assets/AboutMePic.png";
 
 const testimonials = [
-  { src: "", title: "The Boat House", description: "lorem ipsum" },
-  { src: "", title: "John Greeley", description: "loren ipsum" },
-  { src: "", title: "Jill Scarbrough", description: "lorem ipsum" },
-  { src: "", title: "Penny White", description: "lorem ipsum" },
+  {
+    src: "",
+    title: "The Loeb BoatHouse",
+    description:
+      "In addition to his impressive work performance, Ramzi is a team player who is able to work well with others and contribute to the overall success of the team. I have no doubt that he will be a valuable asset to any organization that requires excellence and dedication.",
+  },
+  {
+    src: "",
+    title: "John Greeley",
+    description:
+      "Ramzi consistently exceeded expectations and demonstrated his great managerial skills, resourcefulness, and ability to work under pressure and in difficult environments. He always managed to meet deadlines with great success and showed a remarkable ability to adjust to new challenges or unexpected circumstances.",
+  },
+  {
+    src: "",
+    title: "Jill Scarbrough",
+    description:
+      "One of the things that set Ramzi apart is his calm and rofessional demeanor, even when faced with challenging tasks. I highly recommend him for any managerial role, as he is sure to excel and bring value to any team.  I believe he will exceed expectations in any role he takes on.",
+  },
+  {
+    src: "",
+    title: "Penny White",
+    description:
+      "He workedfor me yet taught me a lot.He is creative, hard  working and loves his craft. I use him as an example to this day",
+  },
 ];
 
 function Card({ src, title, description }) {
   return (
     <>
-      <Image
-        src={src}
-        alt=""
-        width="100"
-        height="100"
-        className={styles.image}
-      />
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <div className={styles.card}>
+        <Image
+          src={src}
+          alt=""
+          width="100"
+          height="100"
+          className={styles.testimonialImage}
+        />
+        <div className={styles.cardText}>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+      </div>
     </>
   );
 }
@@ -69,8 +93,8 @@ function AboutMe() {
           <div className={styles.rightSection}>
             <Image
               src={portfolio2}
-              width={400}
-              height={266}
+              width={600}
+              height={400}
               alt="profile image"
               className={styles.image}
             />
@@ -82,21 +106,21 @@ function AboutMe() {
           <div className={styles.leftBioSection}>
             <div className={styles.bio}>
               <p>
-                I am a Full-Stack web developer with a strong background in
-                UI/UX and graphic design. Skilled in leadership, communication,
-                organization, and time management. I am also proficient in media
-                production, including composition, writing, recording, and
-                editing. 
-                <br />
-                <br />I build full-stack web and mobile apps, and maintaining
-                digital products, databases, servers, and hosting platforms.
+                With over 20 years of diverse managerial and consulting
+                experience, I am a Digital Transformation Manager with a proven
+                track record in spearheading innovative web and mobile
+                applications, optimizing UX/UI interfaces, and gnerating revenue
+                growth.
                 <br />
                 <br />
-                In managing businesses I have a proven track record of success in
-                creating and implementing innovative web solutions, managing
-                budgets and inventory, training staff, and organizing and
-                executing events. Skilled in full-stack web development and
-                project management tools.
+                My multifaceted background in software engineering, event
+                management, customer relations, and team leadership equips me to
+                drive transformative digital changes across various sectors.
+                <br />
+                <br />
+                Passionate about integrating modern technologies with business
+                operations, I&apos;m dedicated to empowering organizations with
+                strategic digital solutions.
               </p>
             </div>
           </div>
@@ -109,12 +133,38 @@ function AboutMe() {
         </div>
 
         {/* about me testimonials */}
-        {/* <div className={styles.testimonials}>
+        <div className={styles.testimonials}>
           {testimonials.map((testimonial, index) => (
-            <Card key={index} {...testimonial} />
+            <div key={index} className={styles.cardDiv}>
+              {" "}
+              <Card {...testimonial} />{" "}
+            </div>
           ))}
-        </div> */}
+        </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

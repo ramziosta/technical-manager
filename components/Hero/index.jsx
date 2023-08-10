@@ -7,8 +7,8 @@ import styles from "./hero.module.scss"
 
 
 function Hero() {
-    const height = "00";
-    const width = "300";
+    const height = "650"
+    const width = "430";
     return (
       <>
         <div className={styles.hero}>
@@ -16,7 +16,7 @@ function Hero() {
             <div className={styles.container}>
               <div className={styles.mainHeader}>
                 <h1>Ramzi Osta</h1>
-                <h2 className={styles.fullStackDeveloper}>Digital Transformation</h2>
+                <h2 className={styles.fullStackDeveloper}>Digital Transformation Manager</h2>
                 <h3 className={styles.technicalManager}>Full Stack Web Developer</h3>
               </div>
   
