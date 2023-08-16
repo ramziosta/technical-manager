@@ -1,15 +1,15 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 import Hero from "../components/Hero/index";
-import AboutMe from "../components/AboutMe/index";
-
+import Who from "../components/who/index";
+import What from "../components/whatIdo/index";
 
 const Home = () => {
-
   return (
     <>
-     <Hero /> 
-      <AboutMe />
+      <Hero />
+      <Who />
+      <What />
     </>
   );
 };

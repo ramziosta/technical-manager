@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./aboutMe.module.scss";
+import styles from "./who.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUserLarge,
@@ -14,7 +14,7 @@ import portfolio2 from "../../public/assets/AboutMePic.png";
 const testimonials = [
   {
     src: "",
-    title: "The Loeb BoatHouse",
+    title: "The Loeb BoatHouse, Central Park",
     description:
       "In addition to his impressive work performance, Ramzi is a team player who is able to work well with others and contribute to the overall success of the team. I have no doubt that he will be a valuable asset to any organization that requires excellence and dedication.",
   },
@@ -34,7 +34,7 @@ const testimonials = [
     src: "",
     title: "Penny White",
     description:
-      "He workedfor me yet taught me a lot.He is creative, hard  working and loves his craft. I use him as an example to this day",
+      "He worked for me yet taught me a lot. He is creative, hard working and loves his craft. I use him as an example to this day",
   },
 ];
 
@@ -47,18 +47,18 @@ function Card({ src, title, description }) {
           alt=""
           width="100"
           height="100"
-          className={styles.testimonialImage}
+          className={styles.cardImage}
         />
         <div className={styles.cardText}>
-          <h3>{title}</h3>
-          <p>{description}</p>
+          <h3 classname={styles.cardTitle} >{title}</h3>
+          <p className={styles.cardDescription} >{description}</p>
         </div>
       </div>
     </>
   );
 }
 
-function AboutMe() {
+function Who() {
   return (
     <>
       <div className={styles.container}>
@@ -149,24 +149,9 @@ function AboutMe() {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+  
     </>
   );
 }
 
-export default AboutMe;
+export default Who;

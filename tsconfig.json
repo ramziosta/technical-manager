@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,18 +14,28 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"]
     },
     "noEmit": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "components/AboutMe/index.jsx", "components/Footer/index.jsx", "components/Footer/Navbar.jsx", "components/Hero/index.jsx", "components/Layout/index.jsx", "components/Navbar/index.jsx", "components/Navbar/indexx.jsx", "pages/_app.jsx", "pages/_document.jsx", "pages/about.jsx", "pages/blog.jsx", "pages/index.jsx", "pages/contact.jsx", "pages/services.jsx"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "**/*.tsx",
+    "components/who/index.jsx",
+    "components/Footer/index.jsx",
+    "components/Footer/Navbar.jsx",
+    "components/Hero/index.jsx",
+    "components/Layout/index.jsx",
+    "components/Navbar/index.jsx",
+    "components/Navbar/indexx.jsx",
+    "pages/_app.jsx",
+    "pages/_document.jsx",
+    "pages/about.jsx",
+    "pages/blog.jsx",
+    "pages/index.jsx",
+    "pages/contact.jsx",
+    "pages/services.jsx"
+  ],
+  "exclude": ["node_modules"]
 }
