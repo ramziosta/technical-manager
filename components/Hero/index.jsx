@@ -4,6 +4,7 @@ import Image from 'next/image';
 import ramzi from '../../public/assets/PortfolioImage.png';
 import styles from "./hero.module.scss"
 
+//this is a comment
 
 
 function Hero() {
