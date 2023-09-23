@@ -13,7 +13,7 @@
 }
 
 .leftSection {
-  margin-left: 110px;
+  margin-left: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,7 +66,7 @@
 .bioElevatorPitch {
   display: flex;
   flex-direction: row;
-  margin: 500px 0px 340px 0px;
+  margin: 200px 0px 200px 0px;
 }
 
 .leftBioSection {
@@ -78,6 +78,7 @@
 .bio {
   font-family: var(--font-family-merriweather);
   font-size: var(--font-size-l);
+  font-weight:100;
   line-height: 30px;
   width: 680px;
   height: 400px;
@@ -86,20 +87,23 @@
   top: -200px;
 }
 
+.rightBioSection {
+  position: relative;
+  top: 100px;
+}
+
 .redContainer {
   height: 330px;
-  width: 470px;
+  width: 400px;
   background-color: var(--red);
   display: flex;
   flex-direction: row;
   justify-content: end;
-  position: relative;
-  top: 300px;
 }
 
 .bioCTA {
   position: relative;
-  top: 150px;
+  top: -150px;
   right: 100px;
   display: flex;
   flex-direction: column;
@@ -152,6 +156,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 2rem;
+  margin: 0rem;
   padding: 2rem;
 }
