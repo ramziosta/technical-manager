@@ -1,16 +1,13 @@
-import React from 'react';
-import styles from './styles.module.scss';
-import FooterNavbar from './Navbar'
-
+import React from "react";
+import styles from "./styles.module.scss";
+import FooterNavbar from "./Navbar";
 
 export default function Footer() {
   return (
     <>
       <div className={styles.footer}>
-
-        <div className={styles.left} >
-
-          <div className={styles.logo} >
+        <div className={styles.left}>
+          <div className={styles.logo}>
             <h4>Logo</h4>
           </div>
 
@@ -27,14 +24,12 @@ export default function Footer() {
           </div>
 
           <p>© Copyright 2023 Ramzi Osta</p>
-
         </div>
 
-        <div className={styles.right} >
+        <div className={styles.right}>
           <FooterNavbar />
         </div>
-
       </div>
     </>
-  )
+  );
 }

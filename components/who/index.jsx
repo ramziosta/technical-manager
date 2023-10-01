@@ -50,8 +50,8 @@ function Card({ src, title, description }) {
           className={styles.cardImage}
         />
         <div className={styles.cardText}>
-          <h3 classname={styles.cardTitle} >{title}</h3>
-          <p className={styles.cardDescription} >{description}</p>
+          <h3 className={styles.cardTitle}>{title}</h3>
+          <p className={styles.cardDescription}>{description}</p>
         </div>
       </div>
     </>
@@ -149,7 +149,6 @@ function Who() {
       <br />
       <br />
       <br />
-  
     </>
   );
 }
