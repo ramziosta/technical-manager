@@ -3,6 +3,10 @@ import Link from "next/link";
 import Hero from "../components/Hero/index";
 import Who from "../components/who/index";
 import What from "../components/whatIDo/index";
+import Where from "../components/where/index";
+import When from "../components/when/index";
+import Contact from "./contact";
+import Footer from "../components/Footer/index";
 
 const Home = () => {
   return (
@@ -10,6 +14,10 @@ const Home = () => {
       <Hero />
       <Who />
       <What />
+      <Where />
+      <When />
+      <Contact />
+      <Footer />
     </div>
   );
 };
