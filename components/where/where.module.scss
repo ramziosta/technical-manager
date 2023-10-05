@@ -1,0 +1,117 @@
+// .container {
+//   margin-top: 150px;
+//   font-family: var(--font-family-pp-neue-montreal-bold);
+//   letter-spacing: 2px;
+// }
+
+// .aboutHeader {
+//   margin: 150px 0px;
+//   padding: 20px;
+//   display: flex;
+//   flex-direction: row;
+//   height: 650px;
+// }
+
+// .leftSection {
+//   margin-left: 0px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   flex: 1;
+// }
+
+// .info {
+//   position: relative;
+//   top: -200px;
+// }
+
+// .fa {
+//   padding: 0.2rem 1rem;
+//   width: 1rem;
+// }
+
+// .who,
+// .what,
+// .where,
+// .when {
+//   display: flex;
+//   align-items: center;
+//   line-height: 1.5rem;
+//   font-size: var(--font-size-l);
+// }
+
+// .what,
+// .where,
+// .when {
+//   opacity: 0.3;
+// }
+
+// .w {
+//   color: var(--red);
+// }
+
+// .rightSection {
+//   margin-right: 150px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   flex: 1;
+// }
+
+// .image {
+//   position: relative;
+//   top: -61px;
+// }
+
+// .bioElevatorPitch {
+//   display: flex;
+//   flex-direction: row;
+//   margin: 200px 0px 200px 0px;
+// }
+
+// .leftBioSection {
+//   display: flex;
+//   flex-direction: column;
+//   flex: 1;
+// }
+
+.container {
+display: flex;
+flex-direction: column;
+border: solid green;
+
+.topContainer{
+height: 400px;
+border: red solid 3px;
+display: flex;
+flex-direction: row;
+
+.rightSection{
+  border: solid purple 1px;
+  flex:1;
+  height: 400px;
+
+  .navigation{
+    border: solid blue 2px;
+    height: 100px;
+
+  }
+  .textSection{ 
+    border: solid black 3px;
+    height: 300px;
+  }
+}
+
+.leftSection {
+  border: solid orange;
+  flex:2;
+  height: 400px;
+
+}
+}
+
+.bottomContainer{
+  border: solid blue 1px;
+  height: 400px;
+}
+}
