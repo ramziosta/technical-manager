@@ -29,7 +29,7 @@ const TopSection = () => {
   return (
     <div className={styles.topContainer}>
       <div className={styles.topRightSection}>
-       <Navigation />
+ <Navigation />
        <TextSection />
       </div>
 
@@ -114,5 +114,30 @@ function TextSection() {
 }
 
 function Navigation(){
-  return
+  return(
+    <div className={styles.navigation}>
+    <div className={styles.info}>
+      <div className={styles.who}>
+        <FontAwesomeIcon icon={faUserLarge} className={styles.fa} />
+        <span className={styles.w}>W</span>ho
+      </div>
+
+      <div className={styles.what}>
+        <FontAwesomeIcon icon={faCircleInfo} className={styles.fa} />
+        <span className={styles.w}>W</span>hat
+      </div>
+
+      <div className={styles.where}>
+        <FontAwesomeIcon icon={faLocationDot} className={styles.fa} />
+        <span className={styles.red}>W</span>here{" "}
+        <span className={styles.red}>&nbsp; & </span> &nbsp; Ho
+        <span className={styles.red}>w</span>
+      </div>
+      <div className={styles.when}>
+        <FontAwesomeIcon icon={faCalendarDays} className={styles.fa} />
+        <span className={styles.w}>W</span>hen
+      </div>
+    </div>
+  </div> 
+  )
 }
