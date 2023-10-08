@@ -193,7 +193,7 @@ const ServicesSection = () => {
           <div className={styles.blackContainer}>
             <div className={styles.listContainer}>
               {/*  //< left lists */}
-              <div classname={styles.leftList}>
+              <div className={styles.leftList}>
                 <ul>
                   <li>Full Stack, Front End or Backend Development.</li>
                   <li>Mobile Development with React Native.</li>

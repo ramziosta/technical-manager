@@ -11,9 +11,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import portfolio2 from "../../public/assets/AboutMePic.png";
 
-
-
-
 function Where() {
   return (
     <>
@@ -87,8 +84,6 @@ function Where() {
             </div>
           </div>
         </div>
-
-       
       </div>
     </>
   );
