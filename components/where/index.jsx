@@ -16,7 +16,7 @@ function Where() {
   return (
     <>
       <div className={styles.container}>
-        <TopSection /> 
+        <TopSection />
         <BottomSection />
       </div>
     </>
@@ -29,8 +29,8 @@ const TopSection = () => {
   return (
     <div className={styles.topContainer}>
       <div className={styles.topRightSection}>
- <Navigation />
-       <TextSection />
+        <Navigation />
+        <TextSection />
       </div>
 
       <div className={styles.topLeftSection}>
@@ -48,7 +48,7 @@ const TopSection = () => {
           alt="profile image"
           className={styles.desk}
         />
-      </div> 
+      </div>
     </div>
   );
 };
@@ -62,14 +62,14 @@ const BottomSection = () => {
           <span className={styles.italic}>real time</span>.
         </h2>
         <div className={styles.blsText}>
-        <p>
-          I utilizes digital communication channels to keep you in the loop,
-          along with industry standard apps and methodologies to manage your
-          projects, like Jira, Trello, Notion, Asana, Slack, Discord, Zoom,
-          Microsoft Teams, Google Meet, and more.
-          <br />
-          Never miss a beat on your project progress.
-        </p>
+          <p>
+            I utilizes digital communication channels to keep you in the loop,
+            along with industry standard apps and methodologies to manage your
+            projects, like Jira, Trello, Notion, Asana, Slack, Discord, Zoom,
+            Microsoft Teams, Google Meet, and more.
+            <br />
+            Never miss a beat on your project progress.
+          </p>
         </div>
       </div>
       <div className={styles.bottomRightSection}>
@@ -80,7 +80,10 @@ const BottomSection = () => {
           </h2>
         </div>
         <div>
-          <Link  className={styles.link} href=""> Contact Me</Link>
+          <Link className={styles.link} href="">
+            {" "}
+            Contact Me
+          </Link>
         </div>
       </div>
     </div>
@@ -88,56 +91,54 @@ const BottomSection = () => {
 };
 
 function TextSection() {
-  return(
+  return (
     <div className={styles.textSection}>
-    <p>
-      I offer my services{" "}
-      <span className={`${styles.red} ${styles.bold}`}>remotely</span> for
-      individuals, companies, small businesses, and cross-functional teams
-      globally.
-    </p>
-    <p>
-      In addition, I provide hybrid and on-location services for the{" "}
-      <span className={`${styles.red} ${styles.bold}`}>New York City</span> area.
-    </p>
-    <p>
-      Outside NYC? I&apos;m open to relocation for the right project.
-    </p>
-    <div>
-      <Link className={styles.letsTalkLink} href="">
-        Let&apos;s talk!
-      </Link>
+      <p>
+        I offer my services{" "}
+        <span className={`${styles.red} ${styles.bold}`}>remotely</span> for
+        individuals, companies, small businesses, and cross-functional teams
+        globally.
+      </p>
+      <p>
+        In addition, I provide hybrid and on-location services for the{" "}
+        <span className={`${styles.red} ${styles.bold}`}>New York City</span>{" "}
+        area.
+      </p>
+      <p>Outside NYC? I&apos;m open to relocation for the right project.</p>
+      <div>
+        <Link className={styles.letsTalkLink} href="">
+          Let&apos;s talk!
+        </Link>
+      </div>
     </div>
-  </div>
-  
-  )
+  );
 }
 
-function Navigation(){
-  return(
+function Navigation() {
+  return (
     <div className={styles.navigation}>
-    <div className={styles.info}>
-      <div className={styles.who}>
-        <FontAwesomeIcon icon={faUserLarge} className={styles.fa} />
-        <span className={styles.w}>W</span>ho
-      </div>
+      <div className={styles.info}>
+        <div className={styles.who}>
+          <FontAwesomeIcon icon={faUserLarge} className={styles.fa} />
+          <span className={styles.w}>W</span>ho
+        </div>
 
-      <div className={styles.what}>
-        <FontAwesomeIcon icon={faCircleInfo} className={styles.fa} />
-        <span className={styles.w}>W</span>hat
-      </div>
+        <div className={styles.what}>
+          <FontAwesomeIcon icon={faCircleInfo} className={styles.fa} />
+          <span className={styles.w}>W</span>hat
+        </div>
 
-      <div className={styles.where}>
-        <FontAwesomeIcon icon={faLocationDot} className={styles.fa} />
-        <span className={styles.red}>W</span>here{" "}
-        <span className={styles.red}>&nbsp; & </span> &nbsp; Ho
-        <span className={styles.red}>w</span>
-      </div>
-      <div className={styles.when}>
-        <FontAwesomeIcon icon={faCalendarDays} className={styles.fa} />
-        <span className={styles.w}>W</span>hen
+        <div className={styles.where}>
+          <FontAwesomeIcon icon={faLocationDot} className={styles.fa} />
+          <span className={styles.red}>W</span>here{" "}
+          <span className={styles.red}>&nbsp; & </span> &nbsp; Ho
+          <span className={styles.red}>w</span>
+        </div>
+        <div className={styles.when}>
+          <FontAwesomeIcon icon={faCalendarDays} className={styles.fa} />
+          <span className={styles.w}>W</span>hen
+        </div>
       </div>
     </div>
-  </div> 
-  )
+  );
 }
