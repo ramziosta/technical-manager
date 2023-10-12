@@ -17,10 +17,10 @@ function Hero() {
             <div className={styles.mainHeader}>
               <h1>Ramzi Osta</h1>
               <h2 className={styles.fullStackDeveloper}>
-                Digital Transformation Manager
+                Technical Project Manager
               </h2>
               <h3 className={styles.technicalManager}>
-                Full Stack Web Developer
+                 Web Developer
               </h3>
             </div>
 

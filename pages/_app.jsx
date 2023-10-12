@@ -5,7 +5,9 @@ import '../styles/app.scss';
 import '../styles/globals.scss'
 import {DevSupport} from "@react-buddy/ide-toolbox-next";
 import {ComponentPreviews, useInitial} from "@/dev";
-
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 const MyApp = ({Component, pageProps}) => {
     return (
         <Layout>

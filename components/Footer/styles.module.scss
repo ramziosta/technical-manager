@@ -1,19 +1,47 @@
-// /* about styles */
 
-// .footer {
-//   font-family: var(--font-family-work-sans);
-//   height: 100%;
-//   color: rgb(255, 0, 0);
-//   background-color: var(--dark-color);
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   height: 400px;
-//   padding: 30px 200px;
 
-//   .logo {
-//     background: var(--primary-color);
-//     width: 100px;
-//     height: 40px;
-//   }
-// }
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: var(--white);
+  background-color: var(--grey1);
+  font-family: var(--font-family-pp-neue-montreal-medium);
+
+  .navbar, .socialMedia{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .socialMedia{
+        font-size: var(--font-size-s);
+    }
+
+      .links {
+        text-decoration: none;
+        color: var(--white);
+        font-size: var(--font-size-l);
+        letter-spacing: 5px;
+    }
+
+    .contact{
+        color: var(--red);
+        font-family: var(--font-family-pp-neue-montreal-bold);
+        font-size: var(--font-size-l);
+    }
+  }
+  .logo {
+    height: 100px;
+    font-size: var(--font-size-l);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+}
+  
+

@@ -38,21 +38,19 @@ function When() {
             </div>
           </div>
           <div className={styles.leftSectionText}>
-         
-            <p clasName={styles.text}>
-            Unlock the full potential of your project or your online presence. Together, we can discuss your specific needs and create a personalized plan to achieve your business goals. Time is of the essence, let&apos;s start now.
+            <p className={styles.text}>
+              Unlock the full potential of your project or your online presence.
+              Together, we can discuss your specific needs and create a
+              personalized plan to achieve your business goals. Time is of the
+              essence, let&apos;s start now.
             </p>
-          
-          <div className={styles.cta}>
-            <Link href="/" className={styles.link}>
-              Schedule your project
-            </Link>
-          </div>
 
+            <div className={styles.cta}>
+              <Link href="/" className={styles.link}>
+                Schedule your project
+              </Link>
+            </div>
           </div>
-
-        
-        
         </div>
 
         <div className={styles.rightSection}>
