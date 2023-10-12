@@ -26,15 +26,14 @@ function Hero() {
 
             <div className={styles.mainParagraph}>
               <p>
-                Digital consulting and management services for entrepreneurs
-                startups and small businesses to establish online presence and
-                streamline operations for success in today&apos;s{" "}
-                <span className={styles.underline}>digital landscape.</span>
+              Providing digital consulting and management services to help entrepreneurs, startups, and small businesses establish a strong online presence and streamline operations for success in today&apos;s{" "}
+                <span className={styles.underline}>digital world.</span>
               </p>
+             
             </div>
 
             <div className={styles.cta}>
-              <h4>Elevate your business now!</h4>
+              <h3 className={styles.elevate}>Let&apos;s Elevate Your </h3><h3 className={styles.elevate}>Business Today!!</h3>
             </div>
           </div>
           <div className={styles.ctaButton}>

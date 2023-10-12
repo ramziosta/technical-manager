@@ -43,6 +43,7 @@
   line-height: 30px;
 }
 
+
 .underline {
   padding-bottom: 10px;
   background: url("../../public/assets/underline2.png") repeat-x bottom;
@@ -58,7 +59,15 @@
   font-family: var(--font-family-pp-neue-montreal-bold);
   letter-spacing: 2px;
 }
-
+.elevate{
+  font-size: var(--font-size-xxl);
+  text-align: left;
+  letter-spacing: 5px;
+  color: var(--white);
+  background: var(--red);
+  width: max-content;
+  padding:10px;
+}
 .ctaButton {
   margin: 10px 0px;
   display: flex;
