@@ -1,1 +1,90 @@
-@import"https://fonts.googleapis.com/css2?family=Merriweather:300";@font-face{font-family:"pp-neue-montreal-thin";src:url("../public/assets/Fonts/PPNeueMontreal-Thin.otf")}@font-face{font-family:"pp-neue-montreal-bold";src:url("../public/assets/fonts/PPNeueMontreal-Bold.otf")}@font-face{font-family:"pp-neue-montreal-book";src:url("../public/assets/Fonts/PPNeueMontreal-Book.otf")}@font-face{font-family:"pp-neue-montreal-medium";src:url("../public/assets/Fonts/PPNeueMontreal-Medium.otf")}*{box-sizing:border-box;padding:0;margin:0;scroll-behavior:smooth}:root{--font-base: "pp-neue-montreal-Thin";--text-base: "Merriweather";--red: #d50000;--light-red: #e04040;--dark-red: #a00000;--black: #151616;--black2: #202121;--white: #ffffff;--grey1: #2a2b2b;--grey2: #545556;--grey3: #7e7f81;--grey4: #a8a9ac;--grey5: #d4d4d6;--grey6: #eaeaeb;--font-size-s: 0.625rem;--font-size-m: 1.25rem;--font-size-l: 1.5rem;--font-size-xl: 2rem;--font-size-xxl: 2.5rem;--font-size-mobilePhone: 3rem ;--font-size-xxxl: 4rem;--font-size-ramzi-ipad: 5rem;--font-size-ramzi: 6rem;--font-size-xxxxl: 7.5rem;--font-family-merriweather: "Merriweather";--font-family-merriweather-bold: "Merriweather Bold";--font-family-merriweather-thin: "Merriweather Thin";--font-family-merriweather-medium: "Merriweather Medium";--font-family-merriweather-book: "Merriweather Book";--font-family-merriweather-light: "Merriweather Light";--font-family-merriweather-thin-italic: "Merriweather Thin Italic";--font-family-merriweather-medium-italic: "Merriweather Medium Italic";--font-family-merriweather-book-italic: "Merriweather Book Italic";--font-family-merriweather-bold-italic: "Merriweather Bold Italic";--font-family-pp-neue-montreal-black: "pp-neue-montreal-black";--font-family-pp-neue-montreal-bold: "pp-neue-montreal-Bold";--font-family-pp-neue-montreal-light: "pp-neue-montreal-Light";--font-family-pp-neue-montreal-medium: "pp-neue-montreal-medium";--font-family-pp-neue-montreal-thin: "pp-neue-montreal-thin";--font-family-pp-neue-montreal-book: "pp-neue-montreal-book";--font-family-pp-neue-montreal-thin-italic: "pp-neue-montreal-thin-italic";--font-family-pp-neue-montreal-medium-italic: "pp-neue-montreal-medium-italic";--font-family-pp-neue-montreal-book-italic: "pp-neue-montreal-book-italic";--font-family-pp-neue-montreal-bold-italic: "pp-neue-montreal-bold-italic"}.pp-neue-montreal-medium-black-24px{color:var(--black);font-family:var(--font-family-pp-neue-montreal-black);font-size:var(--font-size-l);font-weight:400;font-style:normal}.pp-neue-montreal-medium-black-40px{color:var(--black);font-family:var(--font-family-pp-neue-montreal-medium);font-size:var(--font-size-xxl);font-weight:500;font-style:normal}.pp-neue-montreal-medium-black-64px{color:var(--black);font-family:var(--font-family-pp-neue-montreal-bold);font-size:var(--font-size-xxxl);font-weight:700;font-style:normal}/*# sourceMappingURL=globals.css.map */
+@import "https://fonts.googleapis.com/css2?family=Merriweather:300";
+@font-face {
+  font-family: "pp-neue-montreal-thin";
+  src: url("../public/assets/Fonts/PPNeueMontreal-Thin.otf");
+}
+@font-face {
+  font-family: "pp-neue-montreal-bold";
+  src: url("../public/assets/fonts/PPNeueMontreal-Bold.otf");
+}
+@font-face {
+  font-family: "pp-neue-montreal-book";
+  src: url("../public/assets/Fonts/PPNeueMontreal-Book.otf");
+}
+@font-face {
+  font-family: "pp-neue-montreal-medium";
+  src: url("../public/assets/Fonts/PPNeueMontreal-Medium.otf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+:root {
+  --font-base: "pp-neue-montreal-Thin";
+  --text-base: "Merriweather";
+  --red: #d50000;
+  --light-red: #e04040;
+  --dark-red: #a00000;
+  --black: #151616;
+  --black2: #202121;
+  --white: #ffffff;
+  --grey1: #2a2b2b;
+  --grey2: #545556;
+  --grey3: #7e7f81;
+  --grey4: #a8a9ac;
+  --grey5: #d4d4d6;
+  --grey6: #eaeaeb;
+  s: 0.625rem;
+  m: 1.25rem;
+  l: 1.5rem;
+  xl: 2rem;
+  xxl: 2.5rem;
+  mobilephone: 3rem;
+  xxxl: 4rem;
+  ramzi-ipad: 5rem;
+  ramzi: 6rem;
+  xxxxl: 7.5rem;
+  --font-family-merriweather: "Merriweather";
+  --font-family-merriweather-bold: "Merriweather Bold";
+  --font-family-merriweather-thin: "Merriweather Thin";
+  --font-family-merriweather-medium: "Merriweather Medium";
+  --font-family-merriweather-book: "Merriweather Book";
+  --font-family-merriweather-light: "Merriweather Light";
+  --font-family-merriweather-thin-italic: "Merriweather Thin Italic";
+  --font-family-merriweather-medium-italic: "Merriweather Medium Italic";
+  --font-family-merriweather-book-italic: "Merriweather Book Italic";
+  --font-family-merriweather-bold-italic: "Merriweather Bold Italic";
+  --font-family-pp-neue-montreal-black: "pp-neue-montreal-black";
+  --font-family-pp-neue-montreal-bold: "pp-neue-montreal-Bold";
+  --font-family-pp-neue-montreal-light: "pp-neue-montreal-Light";
+  --font-family-pp-neue-montreal-medium: "pp-neue-montreal-medium";
+  --font-family-pp-neue-montreal-thin: "pp-neue-montreal-thin";
+  --font-family-pp-neue-montreal-book: "pp-neue-montreal-book";
+  --font-family-pp-neue-montreal-thin-italic: "pp-neue-montreal-thin-italic";
+  --font-family-pp-neue-montreal-medium-italic: "pp-neue-montreal-medium-italic";
+  --font-family-pp-neue-montreal-book-italic: "pp-neue-montreal-book-italic";
+  --font-family-pp-neue-montreal-bold-italic: "pp-neue-montreal-bold-italic";
+}
+.pp-neue-montreal-medium-black-24px {
+  color: var(--black);
+  font-family: var(pp-neue-montreal-black);
+  font-size: l;
+  font-weight: 400;
+  font-style: normal;
+}
+.pp-neue-montreal-medium-black-40px {
+  color: var(--black);
+  font-family: var(pp-neue-montreal-medium);
+  font-size: xxl;
+  font-weight: 500;
+  font-style: normal;
+}
+.pp-neue-montreal-medium-black-64px {
+  color: var(--black);
+  font-family: var(pp-neue-montreal-bold);
+  font-size: xxxl;
+  font-weight: 700;
+  font-style: normal;
+} /*# sourceMappingURL=globals.css.map */

@@ -106,34 +106,36 @@ function Who() {
           <div className={styles.leftBioSection}>
             <div className={styles.bio}>
               <p>
-                With over 20 years of diverse managerial and consulting
-                experience, I am a Digital Transformation Manager with a proven
-                track record in spearheading innovative web and mobile
-                applications, optimizing UX/UI interfaces, and gnerating revenue
+                Over 20 years of rich managerial and consulting experience, I
+                stand as a Digital Transformation Manager with a distinguished
+                track record. I&apos;ve pioneered innovative web and mobile
+                applications, honed UX/UI interfaces, and catalyzed revenue
                 growth.
                 <br />
                 <br />
-                My multifaceted background in software engineering, event
-                management, customer relations, and team leadership equips me to
-                drive transformative digital changes across various sectors.
+                My diverse expertise spans software engineering, event
+                management, customer relations, and team leadership, uniquely
+                positioning me to champion transformative digital shifts across
+                a spectrum of industries.
                 <br />
                 <br />
-                Passionate about integrating modern technologies with business
-                operations, I&apos;m dedicated to empowering organizations with
-                strategic digital solutions.
+                Driven by a passion for cutting-edge technologies with business
+                strategies, dedicated to empowering organizations with strategic
+                digital solutions.
               </p>
             </div>
           </div>
           <div className={styles.rightBioSection}>
             <div className={styles.redContainer}></div>
             <div className={styles.bioCTA}>
-              <Link href="/about">More About Me</Link>
+              <Link href="/about">Learn More About Me</Link>
             </div>
           </div>
         </div>
 
         {/* about me testimonials */}
         <div className={styles.testimonials}>
+          <h3 className={styles.whatTheySay}>What Others Say About Me</h3>
           {testimonials.map((testimonial, index) => (
             <div key={index} className={styles.cardDiv}>
               {" "}

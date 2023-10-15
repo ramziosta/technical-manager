@@ -104,12 +104,12 @@
 .bioCTA {
   position: relative;
   top: -150px;
-  right: 100px;
+  right: 110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: var(--white);
-  width: 300px;
+  width: 350px;
   height: 80px;
   border: 8px solid var(--black);
   text-align: center;
@@ -126,6 +126,10 @@
     background-color: var(--grey6);
     transition: background-color 0.3s ease-in-out;
   }
+}
+
+h.whatTheySay{
+   font-size:var(--font-size-l);
 }
 
 .card {

@@ -1,1 +1,149 @@
-.navBar{font-family:var(--font-family-pp-neue-montreal-book);font-size:24px;display:flex;flex-direction:row;justify-content:space-between;margin-top:20px}.logo{margin-left:50px;text-decoration:none;color:var(--black);font-family:var(--font-family-pp-neue-montreal-bold);letter-spacing:2 px}.logo:hover{color:var(--red)}.hamburger{display:none;flex-direction:column;justify-content:space-around;width:2rem;height:2rem;background:rgba(0,0,0,0);border:none;cursor:pointer;padding:0;z-index:10}.bar{width:2rem;height:.25rem;background-color:#db0000;border-radius:10px;transition:all .3s linear}.bar1{transform:rotate(-45deg) translate(-5px, 6px)}.bar2{opacity:0}.bar3{transform:rotate(45deg) translate(-5px, -6px)}.mobileLinks{position:absolute;top:100px}.mobileClosed{display:none}.mainNavigation{display:flex;flex-direction:row}.mainNavigation li{list-style-type:none;width:130px}.mainNavigation li a{display:block;text-decoration:none;color:var(--black)}.mainNavigation li a:hover{font-family:var(--font-family-pp-neue-montreal-bold)}.mainNavigation .dropdown{display:none}.mainNavigation .dropdown li{margin:15px 0px}.mainNavigation li a:after{content:"";display:block;width:35px;height:5px;background:var(--red);transform:scaleX(0);transition:transform .5s ease-in-out}.mainNavigation li a:hover:after{transform:scaleX(1)}.navLinks{color:var(--black);display:flex;flex-direction:row;justify-content:space-evenly}li:hover .dropdown{position:absolute;display:block;z-index:9999}.more:hover{color:var(--red);font-family:var(--font-family-pp-neue-montreal-bold)}@media(max-width: 768px){.logo{margin-left:10px}.hamburger{margin-right:20px;display:flex}.mainNavigation{display:none}.dropdown{display:block}.mobileNavLinks{position:relative;right:190px;width:250px;background-color:var(--grey5);list-style-type:none;padding:30px;margin:auto 30px;transition:1.5s ease-in-out}.mobileNavLinks a{text-decoration:none;color:var(--black)}.mobileNavLinks a:hover{font-family:var(--font-family-pp-neue-montreal-bold)}.mobileNavLinks li{margin-bottom:20px}.mobileNavLinks li a:after{content:"";display:block;width:35px;height:5px;background:var(--red);transform:scaleX(0);transition:transform .5s ease-in-out}.mobileNavLinks li a:hover:after{transform:scaleX(1)}}/*# sourceMappingURL=styles.module.css.map */
+.navBar {
+  font-family: var(pp-neue-montreal-book);
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.logo {
+  margin-left: 50px;
+  text-decoration: none;
+  color: var(--black);
+  font-family: var(pp-neue-montreal-bold);
+  letter-spacing: 2 px;
+}
+.logo:hover {
+  color: var(--red);
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+.bar {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #db0000;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+.bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.bar2 {
+  opacity: 0;
+}
+.bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.mobileLinks {
+  position: absolute;
+  top: 100px;
+}
+.mobileClosed {
+  display: none;
+}
+.mainNavigation {
+  display: flex;
+  flex-direction: row;
+}
+.mainNavigation li {
+  list-style-type: none;
+  width: 130px;
+}
+.mainNavigation li a {
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+}
+.mainNavigation li a:hover {
+  font-family: var(pp-neue-montreal-bold);
+}
+.mainNavigation .dropdown {
+  display: none;
+}
+.mainNavigation .dropdown li {
+  margin: 15px 0px;
+}
+.mainNavigation li a:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 5px;
+  background: var(--red);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.mainNavigation li a:hover:after {
+  transform: scaleX(1);
+}
+.navLinks {
+  color: var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+li:hover .dropdown {
+  position: absolute;
+  display: block;
+  z-index: 9999;
+}
+.more:hover {
+  color: var(--red);
+  font-family: var(pp-neue-montreal-bold);
+}
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 10px;
+  }
+  .hamburger {
+    margin-right: 20px;
+    display: flex;
+  }
+  .mainNavigation {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
+  .mobileNavLinks {
+    position: relative;
+    right: 190px;
+    width: 250px;
+    background-color: var(--grey5);
+    list-style-type: none;
+    padding: 30px;
+    margin: auto 30px;
+    transition: 1.5s ease-in-out;
+  }
+  .mobileNavLinks a {
+    text-decoration: none;
+    color: var(--black);
+  }
+  .mobileNavLinks a:hover {
+    font-family: var(pp-neue-montreal-bold);
+  }
+  .mobileNavLinks li {
+    margin-bottom: 20px;
+  }
+  .mobileNavLinks li a:after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 5px;
+    background: var(--red);
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+  }
+  .mobileNavLinks li a:hover:after {
+    transform: scaleX(1);
+  }
+} /*# sourceMappingURL=styles.module.css.map */

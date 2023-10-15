@@ -97,7 +97,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <p className={styles.more}>More</p>
+            <p className={styles.more}>Explore</p>
             <ul className={styles.dropdown}>
               <li>
                 <Link href="/work">Work</Link>

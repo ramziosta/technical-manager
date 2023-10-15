@@ -17,27 +17,30 @@ function Hero() {
             <div className={styles.mainHeader}>
               <h1>Ramzi Osta</h1>
               <h2 className={styles.fullStackDeveloper}>
-                Technical Project Manager
+                Digital Transformation Manager
               </h2>
-              <h3 className={styles.technicalManager}>
+              {/* <h3 className={styles.technicalManager}>
                  Web Developer
-              </h3>
+              </h3> */}
             </div>
 
             <div className={styles.mainParagraph}>
               <p>
-              Providing digital consulting and management services to help entrepreneurs, startups, and small businesses establish a strong online presence and streamline operations for success in today&apos;s{" "}
-                <span className={styles.underline}>digital world.</span>
+                Empowering entrepreneurs, startups, and small businesses with
+                tailored digital consulting and management solutions. My mission
+                is to fortify your online presence and optimize operations,
+                ensuring you thrive in today&apos;s{" "}
+                <span className={styles.underline}>digital landscape.</span>
               </p>
-             
             </div>
 
             <div className={styles.cta}>
-              <h3 className={styles.elevate}>Let&apos;s Elevate Your </h3><h3 className={styles.elevate}>Business Today!!</h3>
+              <h3 className={styles.elevate}>Let&apos;s Elevate Your </h3>
+              <h3 className={styles.elevate}>Digital Presence Today!!</h3>
             </div>
           </div>
           <div className={styles.ctaButton}>
-            <Link href="/contact">Contact Me</Link>
+            <Link href="/contact"> Start Now</Link>
           </div>
         </div>
 
