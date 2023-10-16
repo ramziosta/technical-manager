@@ -50,13 +50,14 @@
     flex-direction: row;
     justify-content: flex-end;
 
-    .redDiv {
+ //TODO: fix flex boxes to flex-start for both red n black
+    .redDiv { 
       background-color: var(--red);
       height: 100px;
-      width: 600px;
+      width: 550px;
       position: relative;
       top: 20px;
-      left: 480px;
+      left: 500px;
       z-index: -1;
     }
 

@@ -10,53 +10,10 @@ import {
   faCalendarDays,
 } from "@fortawesome/free-solid-svg-icons";
 import portfolio2 from "../../public/assets/AboutMePic.png";
+import Swiper from "../Swiper/index"
 
-const testimonials = [
-  {
-    src: "",
-    title: "The Loeb BoatHouse, Central Park",
-    description:
-      "In addition to his impressive work performance, Ramzi is a team player who is able to work well with others and contribute to the overall success of the team. I have no doubt that he will be a valuable asset to any organization that requires excellence and dedication.",
-  },
-  {
-    src: "",
-    title: "John Greeley",
-    description:
-      "Ramzi consistently exceeded expectations and demonstrated his great managerial skills, resourcefulness, and ability to work under pressure and in difficult environments. He always managed to meet deadlines with great success and showed a remarkable ability to adjust to new challenges or unexpected circumstances.",
-  },
-  {
-    src: "",
-    title: "Jill Scarbrough",
-    description:
-      "One of the things that set Ramzi apart is his calm and rofessional demeanor, even when faced with challenging tasks. I highly recommend him for any managerial role, as he is sure to excel and bring value to any team.  I believe he will exceed expectations in any role he takes on.",
-  },
-  {
-    src: "",
-    title: "Penny White",
-    description:
-      "He worked for me yet taught me a lot. He is creative, hard working and loves his craft. I use him as an example to this day",
-  },
-];
 
-function Card({ src, title, description }) {
-  return (
-    <>
-      <div className={styles.card}>
-        <Image
-          src={src}
-          alt=""
-          width="100"
-          height="100"
-          className={styles.cardImage}
-        />
-        <div className={styles.cardText}>
-          <h3 className={styles.cardTitle}>{title}</h3>
-          <p className={styles.cardDescription}>{description}</p>
-        </div>
-      </div>
-    </>
-  );
-}
+
 
 function Who() {
   return (
@@ -132,25 +89,14 @@ function Who() {
             </div>
           </div>
         </div>
-
+        <h2 className={styles.whatTheySay}>What They Say:</h2>
         {/* about me testimonials */}
         <div className={styles.testimonials}>
-          <h3 className={styles.whatTheySay}>What Others Say About Me</h3>
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className={styles.cardDiv}>
-              {" "}
-              <Card {...testimonial} />{" "}
-            </div>
-          ))}
+       
+       <Swiper />
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+     
     </>
   );
 }
