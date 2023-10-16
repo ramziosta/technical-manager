@@ -49,15 +49,14 @@ const HeaderSection = () => {
           <div className={styles.info1}>
             <div className={styles.redDiv}></div>
             <div className={styles.text1}>
-              <h2>Difficulty in finding time and</h2>
-              <h2>energy to focus on the big picture?</h2>
+              <h2>Facing Challenges in Steering the Bigger Picture?</h2>
             </div>
           </div>
 
           <div className={styles.info2}>
-            <h2>
-              Elevate Your Competitive Edge in Today&apos;s Digital Landscape
-              with Me as your Digital Transformation Manager
+            <h2 className={styles.h2}>
+              Elevate Your Competitive Edge in Today&apos;s Tech Landscape with
+              My Expertise as your Digital Transformation Manager.
             </h2>
           </div>
         </div>
@@ -88,18 +87,31 @@ const MiddleSection = () => {
         </div>
         <div className={styles.green}>
           <div className={styles.text}>
-            <p>
-              My diverse skill set encompasses leadership, technology, project
-              management, and innovation. I offer comprehensive support in
-              project planning and execution, agile methodologies, technical
-              problem-solving, and strategic decision-making. Whether it&apos;s
-              leading cross-functional teams, leveraging agile principles, or
-              implementing cutting-edge technologies, I am dedicated to helping
-              your organization thrive in the digital era.
-            </p>
+            <ul>
+              <li>
+                {" "}
+                <span className={styles.bold}>Diverse Expertise:</span> From
+                leadership to technology, I bring a multifaceted skill set to
+                the table.
+              </li>
+              <li>
+                <span className={styles.bold}>Comprehensive Support:</span> I
+                specialize in project planning, agile methodologies, and
+                strategic decision-making.
+              </li>
+              <li>
+                {" "}
+                <span className={styles.bold}>
+                  Innovation at the Forefront:
+                </span>{" "}
+                Whether it&apos;s leading teams, leveraging agile principles, or
+                implementing the latest technologies, I&apos;m committed to
+                ensuring your organization&apos;s digital success.
+              </li>
+            </ul>
           </div>
           <div className={styles.h3}>
-            <h3>I Get The Job Done!</h3>
+            <h3>I Don&apos;t Just Manage; I Get The Job Done!</h3>
           </div>
         </div>
       </div>
@@ -109,28 +121,27 @@ const MiddleSection = () => {
       <div className={styles.textContainer}>
         <div className={styles.leftText}>
           <p className={styles.leftParagraph}>
-            In the ever-evolving landscape of modern business, the race to
-            outpace competitors and maintain a strategic focus on the bigger
-            picture is relentless. Yet, amidst the myriad of tasks and
-            responsibilities, finding the time and resources to excel can be an
-            uphill battle. So, where do we find the answer?
+            In today&apos;s dynamic tech landscape, staying ahead of competitors
+            while keeping an eye on the overarching goals is a challenge. Amidst
+            the multitude of tasks, how do you ensure you&apos;re always at the
+            forefront?
           </p>
         </div>
         <div className={styles.rightText}>
           <div className={styles.h3Div}>
-            <h3 className={styles.growth}>Streamline Your Business Growth</h3>
+            <h3 className={styles.growth}>
+              Harness Sustainable Business Growth
+            </h3>
             <div className={styles.blackDiv}></div>
             <div className={styles.silverDiv}></div>
           </div>
 
           <div className={styles.bottomText}>
             <p className={styles.rightParagraph}>
-              My mission is to empower your business for sustainable growth by
-              optimizing your online presence and streamlining operations.
-              I&apos;m dedicated to helping you unlock your full potential while
-              conserving valuable time and resources. With a proven track record
-              in management and a focus on your online footprint, I&apos;m here
-              to facilitate your journey to success.
+              My goal is to bolster your business&apos;s growth by enhancing its
+              digital presence and refining operational processes. I&apos;m
+              committed to unlocking your organization&apos;s utmost potential,
+              ensuring efficient use of time and resources.
             </p>
           </div>
         </div>
@@ -146,9 +157,9 @@ const BottomSection = () => {
       <div className={styles.whatBottomSection}>
         <div className={styles.silverSection}>
           <h3>
-            Delegate confidently and regain your time as I manage your
-            project&apos;s intricacies. With hands on experience in AI, 3D and
-            AR teams, I bring versatile skills to streamline your journey.
+            Harness the power of innovation. As your dedicated guide, I navigate
+            the intricacies of your projects, ensuring seamless execution and
+            transformative results.
           </h3>
         </div>
         <div className={styles.bottomBlackDiv}></div>
@@ -185,8 +196,9 @@ const ServicesSection = () => {
           <h2>List Of Services</h2>
           {/* //> Titles */}
           <div className={styles.titles}>
-            <h3>Software and Web Development Services</h3>
-            <h3>Digital and Project Management Services</h3>
+            <h3 className={styles.titlesH3} >Digital & Web Services</h3>
+            <h3 className={styles.titlesH3} >Project Management</h3>
+            <h3 className={styles.titlesH3right} >Adminstrative Services</h3>
           </div>
           {/* //> End of Titles */}
           {/* //! black container */}
@@ -195,23 +207,31 @@ const ServicesSection = () => {
               {/*  //< left lists */}
               <div className={styles.leftList}>
                 <ul>
-                  <li>Full Stack, Front End or Backend Development.</li>
-                  <li>Mobile Development with React Native.</li>
-                  <li>UX/UI Design, Research and Case Studies.</li>
-                  <li>File Management, Documentation and Reporting.</li>
-                  <li>SCRUM, Communication and Collaboration</li>
-                  <li>Content Creation and Social Media Management.</li>
+                  <li>Full Stack.</li>
+                  <li>Front End.</li>
+                  <li>Back End Development.</li>
+                  <li> Mobile Development.</li>
+                  <li>UX/UI Design.</li>
+                </ul>
+              </div>
+
+              <div className={styles.middleList}>
+                <ul>
+                  <li>Office Management.</li>
+                  <li>H.R.</li>
+                  <li>Data Entry.</li>
+                  <li>Vendor Management.</li>
+                  <li>Client management.</li>
+                  <li>Event Planning.</li>
                 </ul>
               </div>
               {/* //? Right List  */}
               <div className={styles.rightList}>
                 <ul>
-                  <li>Office Management and HR</li>
-                  <li>Data Entry and Research.</li>
-                  <li>Vendor Management and Sourcing.</li>
-                  <li>Client Management.</li>
-                  <li>Customer Service.</li>
-                  <li>Event Planning & Execution.</li>
+                  <li>Scrum</li>
+                  <li>Communincation & Collaboration.</li>
+                  <li>Content Creation.</li>
+                  <li>Social Media Management.</li>
                 </ul>
               </div>
             </div>

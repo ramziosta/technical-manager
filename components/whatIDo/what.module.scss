@@ -6,8 +6,10 @@
 }
 
 .leftSection {
+
   font-weight: bold;
-  min-width: 250px;
+  min-width: 350px;
+  margin: 100px 0px 0px 80px;
 }
 
 .fa {
@@ -36,10 +38,12 @@
 }
 
 .rightSection {
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 1500px;
+  justify-content: space-around;
+  width: 1000px;
+  margin: 100px 0px 0px 0px;
 
   .info1 {
     display: flex;
@@ -49,10 +53,10 @@
     .redDiv {
       background-color: var(--red);
       height: 100px;
-      width: 560px;
+      width: 600px;
       position: relative;
       top: 20px;
-      left: 550px;
+      left: 480px;
       z-index: -1;
     }
 
@@ -63,20 +67,30 @@
       height: 110px;
       background-color: var(--black);
       padding: 20px;
+      
     }
   }
 
   .info2 {
     font-size: var(--font-size-l);
-    color: var(--red);
-    width: 1100px;
+background-color: var(--grey4);
     text-align: right;
     margin: 150px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-star;
+    padding: 20px;
+
+    .h2{ 
+    width: 1000px;
+ 
+    }
   }
 }
 
 .imagesAndTextContainer {
-  height: 650px;
+  margin: 150px 0px;
+  height: 600px;
   display: flex;
   flex-direction: row;
 }
@@ -116,11 +130,22 @@
   line-height: 35px;
   width: 600px;
 }
+
+.bold{
+  font-weight: bold;
+  font-size: var(--font-size-l);
+  letter-spacing: 2px;
+  color: var(--white);
+  background: var(--red);
+  padding: 2px 4px;
+}
 .h3 {
+  margin: 200px 0px;
   flex: 1;
   color: var(--red);
   font-size: var(--font-size-xxl);
   font-family: var(--font-family-pp-neue-montreal-bold);
+  width: 600px;
 }
 
 .textContainer {
@@ -281,6 +306,11 @@
   flex-direction: row;
   justify-content: space-around;
   margin: 30px 0px;
+
+  .titlesH3right{
+    position: relative;
+    right:  50px;
+  }
 }
 
 .blackContainer {
@@ -289,16 +319,27 @@
   font-family: var(--font-family-merriweather);
   margin: 0px 0px 50px 0px;
 
+
   .listContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: var(--white);
+
+    
   }
 
+  .leftList, .middleList, .rightList{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
   ul {
     line-height: 40px;
 
     margin-top: 60px;
+    li{
+      font-family: var(--font-family-pp-neue-montreal-medium);
+    }
   }
 }
