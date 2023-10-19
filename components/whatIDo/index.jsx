@@ -9,6 +9,14 @@ import {
   faCircleInfo,
   faCalendarDays,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
+} from "@chakra-ui/react";
 import image1 from "../../public/assets/portfolio2.png";
 import image2 from "../../public/assets/building.png";
 
@@ -90,10 +98,17 @@ const MiddleSection = () => {
             <ul>
               <li>
                 {" "}
+                <span className={styles.bold}> Technical Bridge:</span>{" "}
+                Expertise in programming and UX/UI design enables enhanced team
+                communication and project collaboration.{" "}
+              </li>
+              <li>
+                {" "}
                 <span className={styles.bold}>Diverse Expertise:</span> From
                 leadership to technology, I bring a multifaceted skill set to
                 the table.
               </li>
+
               <li>
                 <span className={styles.bold}>Comprehensive Support:</span> I
                 specialize in project planning, agile methodologies, and
@@ -192,51 +207,78 @@ const ServicesSection = () => {
         <div className={styles.servicesH2}>
           <h2>Services</h2>
         </div>
+
         <div className={styles.silverContainer}>
           <h2>List Of Services</h2>
-          {/* //> Titles */}
-          <div className={styles.titles}>
-            <h3 className={styles.titlesH3} >Digital & Web Services</h3>
-            <h3 className={styles.titlesH3} >Project Management</h3>
-            <h3 className={styles.titlesH3right} >Adminstrative Services</h3>
-          </div>
-          {/* //> End of Titles */}
-          {/* //! black container */}
-          <div className={styles.blackContainer}>
-            <div className={styles.listContainer}>
-              {/*  //< left lists */}
-              <div className={styles.leftList}>
-                <ul>
-                  <li>Full Stack.</li>
-                  <li>Front End.</li>
-                  <li>Back End Development.</li>
-                  <li> Mobile Development.</li>
-                  <li>UX/UI Design.</li>
-                </ul>
-              </div>
+          <Accordion allowToggle>
+            <div className={styles.accordion}>
+              <AccordionItem>
+                <AccordionButton>
+                  <Box as="span" flex="1" textAlign="left">
+                    <p className={styles.boxTitle}>Digital & Web Services</p>
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
 
-              <div className={styles.middleList}>
-                <ul>
-                  <li>Office Management.</li>
-                  <li>H.R.</li>
-                  <li>Data Entry.</li>
-                  <li>Vendor Management.</li>
-                  <li>Client management.</li>
-                  <li>Event Planning.</li>
-                </ul>
-              </div>
-              {/* //? Right List  */}
-              <div className={styles.rightList}>
-                <ul>
-                  <li>Scrum</li>
-                  <li>Communincation & Collaboration.</li>
-                  <li>Content Creation.</li>
-                  <li>Social Media Management.</li>
-                </ul>
-              </div>
+                <AccordionPanel pb={4}>
+                  <div className={styles.leftList}>
+                    <ul>
+                      <li>Full Stack.</li>
+                      <li>Front End.</li>
+                      <li>Back End Development.</li>
+                      <li> Mobile Development.</li>
+                      <li>UX/UI Design.</li>
+                    </ul>
+                  </div>
+                </AccordionPanel>
+              </AccordionItem>
             </div>
-          </div>
-          {/* //!end of black container */}
+            <div className={styles.accordion2}>
+              <AccordionItem>
+                <AccordionButton>
+                  <Box as="span" flex="1" textAlign="left">
+                    <div className={styles.boxTitle}>Project Management</div>
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+
+                <AccordionPanel pb={1}>
+                  <div className={styles.middleList}>
+                    <ul>
+                      <li>Scrum</li>
+                      <li>Communincation & Collaboration.</li>
+                      <li>Content Creation.</li>
+                      <li>Social Media Management.</li>
+                    </ul>
+                  </div>
+                </AccordionPanel>
+              </AccordionItem>
+            </div>
+            <div className={styles.accordion}>
+              <AccordionItem>
+                <AccordionButton>
+                  <Box as="span" flex="1" textAlign="left">
+                    <div className={styles.boxTitle}>
+                      Adminstrative Services
+                    </div>
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+
+                <AccordionPanel pb={1}>
+                  <div className={styles.rightList}>
+                    <ul>
+                      <li>H.R.</li>
+                      <li>Data Entry.</li>
+                      <li>Event Planning.</li>
+                      <li>Office Management.</li>
+                      <li>Vendor & Client Management.</li>
+                    </ul>
+                  </div>
+                </AccordionPanel>
+              </AccordionItem>
+            </div>
+          </Accordion>
           <div className={styles.linkContainer}>
             <Link className={styles.link} href="/">
               More About My Services
