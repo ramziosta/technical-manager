@@ -9,7 +9,7 @@ import Footer from "../components/Footer/index";
 
 const Home = () => {
   return (
-    <div style={{width:"1440px", border:"4px solid black"}}>
+    <div>
       <Hero />
       <Who />
       <What />

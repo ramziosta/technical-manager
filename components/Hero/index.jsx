@@ -12,6 +12,8 @@ function Hero() {
   return (
     <>
       <div className={styles.hero}>
+        {/* //> Left Section */}
+
         <div className={styles.leftSection}>
           <div className={styles.container}>
             <div className={styles.mainHeader}>
@@ -34,7 +36,7 @@ function Hero() {
               </p>
             </div>
 
-            <div className={styles.cta}>
+            <div className={styles.banner}>
               <h3 className={styles.elevate}>Let&apos;s Elevate Your </h3>
               <h3 className={styles.elevate}>Digital Presence Today!!</h3>
             </div>
@@ -42,8 +44,11 @@ function Hero() {
           <div className={styles.ctaButton}>
             <Link href="/contact"> Start Now</Link>
           </div>
-        </div>
+      
 
+         
+        </div>
+                  {/* //> */}
         <div className={styles.rightSection}>
           <Image
             className={styles.image}
