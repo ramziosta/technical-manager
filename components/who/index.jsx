@@ -1,49 +1,21 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./who.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUserLarge,
-  faLocationDot,
-  faCircleInfo,
-  faCalendarDays,
-} from "@fortawesome/free-solid-svg-icons";
+import styles from "./whoo.module.scss";
+import SideNavigation from "../SideNavigation/index";
 import portfolio2 from "../../public/assets/AboutMePic.png";
-import Swiper from "../Swiper/index"
-
-
-
+import Swiper from "../Swiper/index";
 
 function Who() {
   return (
     <>
       <div className={styles.container}>
+        <div className={styles.mainSection}>
         {/* about me header */}
         <div className={styles.aboutHeader}>
           {/* left section */}
           <div className={styles.leftSection}>
-            <div className={styles.info}>
-              <div className={styles.who}>
-                <FontAwesomeIcon icon={faUserLarge} className={styles.fa} />
-                <span className={styles.w}>W</span>ho
-              </div>
-
-              <div className={styles.what}>
-                <FontAwesomeIcon icon={faCircleInfo} className={styles.fa} />
-                <span className={styles.w}>W</span>hat
-              </div>
-
-              <div className={styles.where}>
-                <FontAwesomeIcon icon={faLocationDot} className={styles.fa} />
-                <span className={styles.w}>W</span> here & Ho
-                <span className={styles.w}>w</span>
-              </div>
-              <div className={styles.when}>
-                <FontAwesomeIcon icon={faCalendarDays} className={styles.fa} />
-                <span className={styles.w}>W</span>hen
-              </div>
-            </div>
+            <SideNavigation />
           </div>
 
           {/* right section */}
@@ -59,7 +31,7 @@ function Who() {
         </div>
 
         {/* short bio elevator pitch */}
-        <div className={styles.bioElevatorPitch}>
+        <div className={styles.elevatorPitch}>
           <div className={styles.leftBioSection}>
             <div className={styles.bio}>
               <p>
@@ -83,20 +55,22 @@ function Who() {
             </div>
           </div>
           <div className={styles.rightBioSection}>
-            <div className={styles.redContainer}></div>
+            <div className={styles.redContainer}>
+             </div>
             <div className={styles.bioCTA}>
               <Link href="/about">Learn More About Me</Link>
             </div>
           </div>
         </div>
-        <h2 className={styles.whatTheySay}>What They Say:</h2>
+        </div>
         {/* about me testimonials */}
-        <div className={styles.testimonials}>
-       
-       <Swiper />
+        <div className={styles.testimonialSection}>
+          <h2 className={styles.whatTheySay}>What They Say:</h2>
+          <div className={styles.testimonials}>
+            <Swiper />
+          </div>
         </div>
       </div>
-     
     </>
   );
 }
