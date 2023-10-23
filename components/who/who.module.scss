@@ -1,162 +1,183 @@
-.container {
-  margin-top: 150px;
-  font-family: var(--font-family-pp-neue-montreal-bold);
-  letter-spacing: 2px;
-
+.mainSection {
   .aboutHeader {
-    margin: 150px 0px;
-    padding: 20px;
     display: flex;
     flex-direction: row;
-    height: 650px;
 
-    .leftSection {
-      margin-left: 0px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex: 1;
-    }
-
+    .leftSection,
     .rightSection {
-      margin-right: 150px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       flex: 1;
-
-      .image {
-        position: relative;
-        top: -61px;
-      }
     }
   }
 
-  .bioElevatorPitch {
+  .elevatorPitch {
     display: flex;
     flex-direction: row;
-    margin: 200px 0px 200px 0px;
-  }
+    padding: 50px 0px;
 
-  .leftBioSection {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    .leftBioSection {
+      flex: 2;
 
-    .bio {
-      font-family: var(--font-family-merriweather);
-      font-size: var(--font-size-l);
-      font-weight: 100;
-      line-height: 30px;
-      width: 680px;
-      height: 400px;
-      position: relative;
-      left: 100px;
-      top: -200px;
+      .bio {
+        font-family: var(--font-family-merriweather);
+        font-size: var(--font-size-l);
+        width: 600px;
+        margin: 50px 80px;
+      }
     }
-  }
-
-  .rightBioSection {
-    position: relative;
-    top: 100px;
-
-    .redContainer {
-      height: 330px;
-      width: 400px;
-      border: var(--red) solid 8px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-
-    .bioCTA {
-      position: relative;
-      top: -150px;
-      right: 110px;
+    .rightBioSection {
+      flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      background-color: var(--white);
-      width: 350px;
-      height: 80px;
-      border: 8px solid var(--black);
-      text-align: center;
+      justify-content: flex-end;
+      align-items: flex-end;
+      position: relative;
+      top: 25px;
 
-      a {
-        text-decoration: none;
-        font-family: var(--font-family-pp-neue-montreal-bold);
-        color: var(--black);
-        font-size: var(--font-size-l);
+      .redContainer {
+        height: 330px;
+        width: 400px;
+        background-color: var(--red);
       }
 
-      &:hover {
-        border-color: var(--black2);
-        background-color: var(--grey6);
-        transition: background-color 0.3s ease-in-out;
+      .bioCTA {
+        position: relative;
+        top: -150px;
+        right: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--white);
+        width: 350px;
+        height: 80px;
+        border: 8px solid var(--black);
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          font-family: var(--font-family-pp-neue-montreal-bold);
+          color: var(--black);
+          font-size: var(--font-size-l);
+        }
+
+        &:hover {
+          border-color: var(--black2);
+          background-color: var(--grey6);
+          transition: background-color 0.3s ease-in-out;
+        }
       }
+
     }
   }
-
- 
-  .testimonialSection {
-    .whatTheySay {
-      margin: 0px 0px 0px 100px;
-      font-size: var(--font-size-xxl);
-      color: var(--red);
-      padding: 1rem;
-      width: max-content;
-    }
-  
+}
+.testimonialSection {
+  margin: 0rem 2rem 10rem 2rem;
+  .whatTheySay {
+    font-weight: bold;
+    margin: 0px 0px 0px 150px;
+    font-size: var(--font-size-xxl);
+    color: var(--red);
+    padding: 1rem;
+    width: max-content;
   }
 }
 
 @media (min-width: 376px) and (max-width: 745px) {
-  .container {
-    margin: 0px auto;
-    text-align: center;
-
-
-    border: solid green 3px;
+  .mainSection {
+    display: flex;
+    flex-direction: column-reverse;
 
     .aboutHeader {
-      display: none !important;
+      display: flex;
+      flex-direction: column;
 
       .leftSection {
-        
+        display: none;
       }
-
       .rightSection {
-        .image {
-        }
+        margin: 2rem auto;
       }
     }
 
-    .bioElevatorPitch {
-
-
-      .leftBioSection {
-        flex: 0;
-        .bio {
-          margin: 0px auto;
-          border: solid purple 3px;
-          left: 0px;
-        }
-      }
+    .elevatorPitch {
+      display: flex;
+      flex-direction: column;
 
       .rightBioSection {
-        top: 400px;
-
+     
+        align-items: center;
         .redContainer {
-          display: none !important;
+          display: none;
         }
 
         .bioCTA {
-       right: 0px;
+          top: 0px;
+          right: 0px;
         }
       }
     }
   }
-
- 
+  .testimonialSection {
+    margin: 2rem auto;
+    .whatTheySay {
+        margin: 1rem auto;
+    };
+  }
 }
 
+@media (max-width: 375px) {
+
+    .mainSection {
+        display: flex;
+        flex-direction: column-reverse;
+    
+        .aboutHeader {
+          display: flex;
+          flex-direction: column;
+    
+          .leftSection {
+            display: none;
+          }
+          .rightSection {
+            margin: 2rem auto;
+          }
+        }
+    
+        .elevatorPitch {
+            padding: 0px;
+          display: flex;
+          flex-direction: column;
+    
+          .rightBioSection {
+            align-items: center;
+
+            .redContainer {
+              display: none;
+            }
+    
+            .bioCTA {
+              top: 0px;
+              right: 0px;
+              width: 270px;
+             margin: 0rem 0rem 3rem;
+            }
+
+          }
+
+          .leftBioSection {
+            .bio{
+                text-align: center;
+                padding: 2rem;
+                margin: 0 auto;
+                width: 100%;
+                font-size: var(--font-size-m)
+            }
+          }
+        }
+      }
+      .testimonialSection {
+        margin: 2rem auto;
+        .whatTheySay {
+            margin: 1rem auto;
+        };
+      }
+    }

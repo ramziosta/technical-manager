@@ -6,36 +6,10 @@
 }
 
 .leftSection {
-
   font-weight: bold;
   min-width: 350px;
-  margin: 100px 0px 0px 80px;
 }
 
-.fa {
-  padding: 0.2rem 1rem;
-  width: 1rem;
-}
-
-.who,
-.what,
-.where,
-.when {
-  display: flex;
-  align-items: center;
-  line-height: 1.5rem;
-  font-size: var(--font-size-l);
-}
-
-.who,
-.where,
-.when {
-  opacity: 0.3;
-}
-
-.w {
-  color: var(--red);
-}
 
 .rightSection {
 
@@ -50,7 +24,7 @@
     flex-direction: row;
     justify-content: flex-end;
 
- //TODO: fix flex boxes to flex-start for both red n black
+
     .redDiv { 
       background-color: var(--red);
       height: 100px;
@@ -77,9 +51,7 @@
 background-color: var(--grey4);
     text-align: right;
     margin: 150px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-star;
+
     padding: 20px;
 
     .h2{ 
@@ -95,7 +67,7 @@ background-color: var(--grey4);
   display: flex;
   flex-direction: row;
 }
-.red {
+imageContainer{
   flex: 1;
 
   height: 650px;
