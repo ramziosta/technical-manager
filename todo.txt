@@ -1,0 +1,10 @@
+//TODO  add transition to all hovers
+transition: all 0.3s linear;
+
+resize all buttons to be same size: edit them as a component and  change the title.
+
+edit all fonts:  line height, letter spacing, font size etc
+
+the red padding for the highlighted white text
+
+plan the projects section as grid

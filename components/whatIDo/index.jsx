@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./wha.module.scss";
+import styles from "./what.module.scss";
 import SideNavigation from "../SideNavigation/index";
 
 import {

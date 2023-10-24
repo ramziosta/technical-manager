@@ -10,7 +10,7 @@ function When() {
     <>
       <div className={styles.container}>
         <div className={styles.leftSection}>
-        <SideNavigation />
+        {/* <SideNavigation /> */}
           <div className={styles.leftSectionText}>
             <p className={styles.text}>
             Let&apos;s collaborate to elevate your digital presence. Discuss your needs and let&apos;s craft a plan tailored for your success.
@@ -25,9 +25,9 @@ function When() {
             Ready to Transform Your Digital Journey? Let&apos;s Talk.
             </h2>
           </div>
-          <div className={styles.calendar}>
+          {/* <div className={styles.calendar}>
             <Image alt="calendar" width={600} height={250} src={calendar} />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
