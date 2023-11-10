@@ -1,0 +1,67 @@
+.container {
+  font-family: var(--font-family-pp-neue-montreal-bold);
+  letter-spacing: 2px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 100px;
+
+  .topSection {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .headerText {
+      color: var(--red);
+      font-size: var(--font-size-xxl);
+      flex: 1;
+      margin: 100px 0 0 0;
+    }
+  }
+
+  .textSection {
+    margin: 0 0 0 100px;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-family-merriweather);
+    max-width: 800px;
+    padding: 40px 0;
+  }
+
+  .bottomSection {
+    .calendar {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      max-height: 250px;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0;
+
+    .topSection {
+      .sideNav {
+        display: none;
+      }
+
+      .headerText {
+        text-align: center;
+      }
+
+    }
+
+    .textSection {
+      margin: 0 2rem;
+      text-align: center;
+    }
+
+    .bottomSection .calendar {
+      justify-content: center;
+    }
+  }
+}
+

@@ -1,0 +1,200 @@
+@media (min-width: 1024px) {
+  /* Your large desktop styles here */
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3rem;
+    .leftSection {
+      flex: 1;
+      margin: 0 0 0 50px;
+      .container {
+        display: flex;
+        flex-direction: column;
+
+        .mainHeader {
+          font-family: var(--font-family-pp-neue-montreal-bold);
+
+          h1 {
+            font-size: var(--font-size-ramzi);
+            letter-spacing: 5px;
+          }
+
+          .fullStackDeveloper {
+            font-size: var(--font-size-xxl);
+          }
+
+          h3 {
+            font-size: var(--font-size-xl);
+          }
+        }
+
+        .mainParagraph {
+          margin: 3rem 0;
+          width: 550px;
+          font-family: var(--font-family-merriweather);
+          font-size: var(--font-size-l);
+          line-height: 30px;
+        }
+
+        .underline {
+          padding-bottom: 10px;
+          background: url("../../app/assets/underline2.png") repeat-x bottom left;
+          background-size: 100% 25px;
+          font-style: italic;
+          font-weight: bold;
+        }
+
+        .banner {
+          margin: 30px 0;
+          font-size: var(--font-size-xxl);
+          font-family: var(--font-family-pp-neue-montreal-bold);
+          letter-spacing: 2px;
+
+          .elevate {
+            font-size: var(--font-size-xxl);
+            text-align: left;
+            letter-spacing: 5px;
+            color: var(--white);
+            background: var(--red);
+            width: max-content;
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    .ctaButton {
+      margin: 3rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 80px;
+      border: 8px solid var(--black);
+
+      &:hover {
+        border-color: var(--black2);
+        background-color: var(--grey6);
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: var(--font-size-l);
+        font-family: var(--font-family-pp-neue-montreal-bold);
+        color: var(--red);
+        letter-spacing: 4px;
+
+        &:hover {
+          color: var(--dark-red);
+        }
+      }
+    }
+
+    .rightSection {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .image {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1023px){
+
+  .hero {
+    text-align: center;
+    .leftSection {
+      .container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+        font-family: var(--font-family-pp-neue-montreal-bold);
+        .banner {
+          margin: 1rem 0;
+          font-size: var(--font-size-m);
+          letter-spacing: 2px;
+
+          .elevate {
+            text-align: center;
+            letter-spacing: 2px;
+            color: var(--white);
+            background: var(--red);
+
+            padding: 5px;
+          }
+        }
+
+        .mainHeader {
+          h1 {
+            margin: 1rem 0;
+            font-size: var(--font-size-xxl);
+          }
+          h2 {
+            font-size: var(--font-size-l);
+          }
+        }
+
+        .mainParagraph {
+          font-family: var(--font-family-merriweather);
+          font-size: var(--font-size-m);
+
+          margin: 1rem 0;
+        }
+        .underline {
+          padding-bottom: 10px;
+          background: url("../../app/assets/underline2.png") repeat-x bottom left;
+          background-size: 100% 25px;
+          font-style: italic;
+          font-weight: bold;
+        }
+      }
+    }
+    .ctaButton {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 12rem;
+      height: 70px;
+      border: 8px solid var(--black);
+
+      &:hover {
+        border-color: var(--black2);
+        background-color: var(--grey6);
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: var(--font-size-l);
+        font-family: var(--font-family-pp-neue-montreal-bold);
+        color: var(--red);
+        letter-spacing: 4px;
+
+        &:hover {
+          color: var(--dark-red);
+        }
+      }
+    }
+    .rightSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .image {
+
+      }
+    }
+  }
+}

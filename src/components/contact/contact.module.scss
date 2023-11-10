@@ -1,0 +1,157 @@
+.email {
+  margin: 0 0 2rem 0;
+  font-family: var(--font-family-pp-neue-montreal-medium);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    color: var(--red);
+    margin: 50px 0;
+    letter-spacing: 5px;
+    font-family: var(--font-family-pp-neue-montreal-bold);
+    text-align: center;
+    font-size: var(--font-size-xxxl);
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .formBorder {
+      border: solid 8px var(--grey4);
+      background-color: var(--grey5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      width: 1000px;
+
+    }
+
+    .input,
+    .textarea {
+      height: 80px;
+      margin: 10px;
+      padding: 10px 20px;
+      border: var(--grey4) solid 8px;
+      font-size: var(--font-size-l);
+      font-family: var(--font-family-pp-neue-montreal-medium);
+    }
+
+    .textarea {
+      padding: 15px 20px;
+    }
+
+    .input::placeholder,
+    .textarea::placeholder {
+      color: #b4b4b4;
+    }
+
+    .button {
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem;
+      width: 450px;
+      height: 80px;
+      border: 8px solid var(--black);
+      font-size: var(--font-size-xl);
+      letter-spacing: 5px;
+      color: var(--red);
+      font-family: var(--font-family-pp-neue-montreal-bold);
+
+      &:hover {
+        border-color: var(--black2);
+        background-color: var(--grey6);
+        color: var(--dark-red);
+        transition: background-color 0.3s ease-in-out;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+
+  .confirmation {
+    border: solid 8px var(--red);
+    background-color: var(--grey6);
+    padding: 150px;
+    letter-spacing: 5px;
+    font-family: var(--font-family-pp-neue-montreal-bold);
+    text-align: center;
+
+    .confirmationH3 {
+      font-size: var(--font-size-xxl);
+      margin: 10px 0;
+    }
+
+    .confirmationMessage {
+      font-size: var(--font-size-l);
+      margin: 10px;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .email {
+    .form {
+      .formBorder {
+        width: 900px;
+      }
+
+
+    }
+
+
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+  .email {
+    .form {
+      .formBorder {
+        width: 650px;
+      }
+    }
+  }
+}
+
+@media(min-width: 640px) and (max-width: 767px) {
+  .email {
+    .form {
+      .formBorder {
+        width: 550px;
+      }
+
+    }
+  }
+}
+
+@media(min-width: 390px) and (max-width: 639px) {
+  .email {
+
+    .header {
+      font-size: var(--font-size-xl);
+       margin: 10rem 0 1rem;
+  }
+    .form {
+      .formBorder {
+        width: 350px;
+      }
+
+      .button {
+        width: 200px;
+        margin: 4rem;
+      }
+    }
+
+  }
+
+
+}

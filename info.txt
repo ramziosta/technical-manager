@@ -1,0 +1,8 @@
+favicon.ico will go to the tab icon
+
+.ts files are used for functions and code that doesn't render a jsx component.
+
+need to change the  mongo db database to use the blogs and the shopping parts of the app.
+
+TODO: create a coming soon page
+

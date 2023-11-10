@@ -1,0 +1,182 @@
+@media (min-width: 1024px){
+.container {
+
+  .mainSection {
+    .aboutHeader {
+      display: flex;
+      flex-direction: row;
+
+      .leftSection,
+      .rightSection {
+        flex: 1;
+      }
+    }
+
+    .elevatorPitch {
+      display: flex;
+      flex-direction: row;
+      padding: 50px 0;
+
+      .leftBioSection {
+        flex: 2;
+
+        .bio {
+          font-family: var(--font-family-merriweather);
+          font-size: var(--font-size-l);
+          max-width: 600px;
+          margin: 50px 80px;
+        }
+      }
+
+      .rightBioSection {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+        top: 25px;
+
+        .redContainer {
+          height: 330px;
+          width: 400px;
+          background-color: var(--red);
+        }
+
+        .bioCTA {
+          position: relative;
+          top: -150px;
+          right: 150px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-color: var(--white);
+          width: 350px;
+          height: 80px;
+          border: 8px solid var(--black);
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            font-family: var(--font-family-pp-neue-montreal-bold);
+            color: var(--red);
+            font-size: var(--font-size-l);
+          }
+
+          &:hover {
+            border-color: var(--black2);
+            background-color: var(--grey6);
+            color: var(--dark-red);
+            transition: background-color 0.3s ease-in-out;
+          }
+        }
+
+      }
+    }
+  }
+
+  .testimonialSection {
+    margin: 0 2rem;
+
+    .whatTheySay {
+      font-weight: bold;
+      margin: 0 0 0 150px;
+      font-size: var(--font-size-xxl);
+      color: var(--red);
+      padding: 1rem;
+      width: max-content;
+    }
+
+    .testimonials {
+
+    }
+  }
+}
+}
+
+
+
+@media (max-width:768px) {
+
+  .mainSection {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .aboutHeader {
+      display: flex;
+      flex-direction: column;
+
+      .leftSection {
+        display: none;
+      }
+
+      .rightSection {
+        margin: 2rem auto;
+      }
+    }
+
+    .elevatorPitch {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+
+      .rightBioSection {
+        display: flex;
+       justify-content: center;
+
+
+        .redContainer {
+          display: none;
+        }
+
+         .bioCTA {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          background-color: var(--white);
+          width: 250px;
+          height: 80px;
+          border: 8px solid var(--black);
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            font-family: var(--font-family-pp-neue-montreal-bold);
+            color: var(--red);
+            font-size: var(--font-size-m);
+          }
+
+          &:hover {
+            border-color: var(--black2);
+            background-color: var(--grey6);
+            color: var(--dark-red);
+            transition: background-color 0.3s ease-in-out;
+          }
+        }
+
+      }
+
+      .leftBioSection {
+        .bio {
+          text-align: center;
+          padding: 2rem;
+          margin: 0 auto;
+          width: 100%;
+          font-size: var(--font-size-m)
+        }
+      }
+    }
+  }
+  .testimonialSection {
+    margin: 2rem auto;
+
+    .whatTheySay {
+      margin: 1rem;
+      text-align: center;
+      color: var(--red);
+      font-size: var(--font-size-l);
+      font-family: var(--font-family-pp-neue-montreal-bold)
+    }
+  }
+}
