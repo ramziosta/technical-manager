@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ramzi Osta
+## Technical Project Manager and Developer
 
-## Getting Started
+### Portfolio Web Application
 
-First, run the development server:
+Welcome to my portfolio web application! 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I built this using technologies including:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js 
+- TypeScript
+- SCSS 
+- ChakraUI
+- FontAwesome
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I am currently working on adding more interactive elements like:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Motion graphics
+- Video  
+- Animation
+- 3D 
 
-## Learn More
+This project allows me to showcase and experiment with web technologies I enjoy working with. 
 
-To learn more about Next.js, take a look at the following resources:
+I am also exploring AI, and have built a chatbot using the OpenAI framework that I plan to incorporate soon.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In the future, I plan to add:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- A blog 
+- An online shop to sell digital creations
 
-## Deploy on Vercel
+Please feel free to contact me regarding:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Work opportunities
+- Collaborations
+- Support
+- Constructive feedback
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for visiting!
+
+- Ramzi Osta
