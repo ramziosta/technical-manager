@@ -58,7 +58,7 @@
 }
 
 @media (max-width:640px){
-  ,links{
-  font-size: var(--font-size-m);
-}
+  .footer .navbar{
+    flex-direction: column;
+  }
 }
