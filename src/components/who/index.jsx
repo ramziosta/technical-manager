@@ -15,7 +15,8 @@ function Who() {
         <div className={styles.aboutHeader}>
           {/* left section */}
           <div className={styles.leftSection}>
-            <SideNavigation />
+            <SideNavigation opacities={{ whoOp: 1.0, whatOp: 0.3, whereOp: 0.2, whenOp: 0.1 }} />
+
           </div>
 
           {/* right section */}

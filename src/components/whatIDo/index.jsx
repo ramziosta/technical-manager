@@ -23,7 +23,7 @@ const HeaderSection = () => {
                 {/* left section */}
                 <div className={styles.topSection}>
                     <div className={styles.leftSection}>
-                        <SideNavigation/>
+              <SideNavigation opacities={{ whoOp: 0.1, whatOp:1.0, whereOp: 0.3, whenOp: 0.2 }} />
                     </div>
 
                     {/* Right Section */}
@@ -121,7 +121,8 @@ const MiddleSection = () => {
             </div>
 
             <div className={styles.h3}>
-                <h3>I Don&apos;t Just Manage; I Get The Job Done!</h3>
+                <h3>I Don&apos;t Just Manage;
+                    <br />I Get The Job Done!</h3>
             </div>
 
             {/* //? Text Section */}

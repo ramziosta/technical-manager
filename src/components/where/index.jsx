@@ -30,14 +30,14 @@ function Where() {
                                 />
                             </div>
                             <div className={styles.sideNav}>
-                                <SideNavigation/>
+                                <SideNavigation opacities={{whoOp: 0.2, whatOp: 0.3, whereOp: 1.0, whenOp: 0.1}}/>
                             </div>
                         </div>
 
                         <h3 className={styles.workWithMe}>Work With Me Anywhere.</h3>
                         <div className={styles.textSection}>
                             <p>
-                                         Offering services remotely globally and on-location in{" "}
+                                Offering services remotely globally and on-location in{" "}
                                 <span className={styles.bold}>New York City</span>
                                 {/*Offering services remotely globally and on-location in{" "}*/}
                                 {/*<span className={`${styles.red} ${styles.bold}`}>New York City</span>.*/}

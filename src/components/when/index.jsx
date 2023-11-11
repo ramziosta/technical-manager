@@ -10,15 +10,15 @@ function When() {
             <div className={styles.container}>
                 <div className={styles.topSection}>
                     <div className={styles.sideNav}>
-                    <SideNavigation/>
-</div>
-                    <div className={styles.headerText}>
+                        <SideNavigation opacities={{whoOp: 0.1, whatOp: 0.2, whereOp: 0.3, whenOp: 1}}/>
+                    </div>
+                </div>
+                  <div className={styles.headerText}>
                         <h2>
-                            Ready to Transform Your Digital Journey? Let&apos;s Talk.
+                            Ready to Transform Your Digital Journey?
+                            <br />Let&apos;s Talk.
                         </h2>
                     </div>
-
-                </div>
                 <div className={styles.textSection}>
                     <p>
                         Let&apos;s collaborate to elevate your digital presence.</p>

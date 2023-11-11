@@ -1,5 +1,5 @@
 .container {
-  font-family: var(--font-family-pp-neue-montreal-bold);
+
   letter-spacing: 2px;
   height: 800px;
   display: flex;
@@ -9,17 +9,15 @@
   .topSection {
     flex: 1;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
 
-    .headerText {
+  }
+  .headerText {
+      font-family: var(--font-family-pp-neue-montreal-bold);
       color: var(--red);
       font-size: var(--font-size-xxl);
       flex: 1;
-      margin: 100px 0 0 0;
+      margin: 100px 0 0 100px;
     }
-  }
-
   .textSection {
     margin: 0 0 0 100px;
     font-size: var(--font-size-xl);
@@ -47,13 +45,12 @@
       .sideNav {
         display: none;
       }
-
-      .headerText {
-        text-align: center;
-      }
-
     }
 
+     .headerText {
+        text-align: center;
+       margin: 0;
+      }
     .textSection {
       margin: 0 2rem;
       text-align: center;
