@@ -1,6 +1,7 @@
 .navigation {
   flex: 1;
-  margin: 100px 0 0 85px;
+  margin: 100px 0 0 80px;
+
 
   .who,
   .what,
@@ -12,12 +13,24 @@
     font-size: var(--font-size-l);
 
     .fa {
-      padding: 0.2rem 1rem;
+      padding: 0.2rem 0;
       width: 1rem;
     }
 
-    .w {
-      color: var(--red);
+    .link {
+      text-decoration: none;
+      margin-left: 10px;
+
+      &:hover{
+        font-weight: bold;
+      }
+
+      .w {
+        color: var(--red);
+      }
+
     }
+
+
   }
 }

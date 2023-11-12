@@ -13,17 +13,13 @@
     }
 
     .elevatorPitch {
-      display: flex;
-      flex-direction: row;
-      padding: 50px 0;
-
       .leftBioSection {
         flex: 2;
 
         .bio {
           font-family: var(--font-family-merriweather);
           font-size: var(--font-size-l);
-          max-width: 600px;
+          max-width: 550px;
           margin: 50px 80px;
         }
       }

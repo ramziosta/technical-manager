@@ -44,7 +44,6 @@
         font-size: var(--font-size-xl);
         font-family: var(--font-family-merriweather);
         letter-spacing: 2px;
-        margin: 100px 0 0 0;
 
         p {
           line-height: 40px;
@@ -125,6 +124,7 @@
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .workWithMe {
+    margin: 0 !important;
     text-align: center;
 
 

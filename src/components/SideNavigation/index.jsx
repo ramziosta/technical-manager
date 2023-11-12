@@ -1,42 +1,67 @@
-import React from "react";
+import {useState} from "react";
 import styles from './sideNavigation.module.scss';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
-  faUserLarge,
-  faLocationDot,
-  faCircleInfo,
-  faCalendarDays,
+    faUserLarge,
+    faLocationDot,
+    faCircleInfo,
+    faCalendarDays,
 } from "@fortawesome/free-solid-svg-icons";
 
-const SideNavigation = ({ opacities = {} }) => {
-  // Provide default opacity values
 
-  const { whoOp, whatOp, whereOp , whenOp } = opacities;
+const SideNavigation = ({opacities = {}}) => {
+    const [hoveredLink, setHoveredLink] = useState('');
 
-  return (
-    <div className={styles.navigation} >
-      <div className={styles.who} style={{ opacity: whoOp }}>
-        <FontAwesomeIcon icon={faUserLarge} className={styles.fa} />
-        <span className={styles.w} >W</span>ho
-      </div>
+    const handleMouseEnter = (linkName) => {
+        setHoveredLink(linkName);
+    };
 
-      <div className={styles.what} style={{ opacity: whatOp }}>
-        <FontAwesomeIcon icon={faCircleInfo} className={styles.fa} />
-        <span className={styles.w} >W</span>hat
-      </div>
+    const handleMouseLeave = () => {
+        setHoveredLink('');
+    };
 
-      <div className={styles.where} style={{ opacity: whereOp }}>
-        <FontAwesomeIcon icon={faLocationDot} className={styles.fa} />
-        <span className={styles.w} >W</span>here & Ho
-        <span className={styles.w}>w</span>
-      </div>
+    const getOpacity = (section) => {
+        // If the section is being hovered, use a different opacity, else use prop value
+        return hoveredLink === section ? 1 : opacities[section + 'Op'];
+    };
 
-      <div className={styles.when} style={{ opacity: whenOp }}>
-        <FontAwesomeIcon icon={faCalendarDays} className={styles.fa} />
-        <span className={styles.w} >W</span>hen
-      </div>
-    </div>
-  );
+    return (
+        <div className={styles.navigation}>
+            <div className={styles.who} style={{opacity: getOpacity('who')}}>
+                <FontAwesomeIcon icon={faUserLarge} className={styles.fa}/>
+                <a href="#who" className={styles.link}
+                   onMouseEnter={() => handleMouseEnter('who')}
+                   onMouseLeave={handleMouseLeave}>
+                    <span className={styles.w}>W</span>ho
+                </a>
+            </div>
+            <div className={styles.what} style={{opacity: getOpacity('what')}}>
+                <FontAwesomeIcon icon={faCircleInfo} className={styles.fa}/>
+                <a href="#what" className={styles.link}
+                   onMouseEnter={() => handleMouseEnter('what')}
+                   onMouseLeave={handleMouseLeave}>
+                    <span className={styles.w}>W</span>hat
+                </a>
+            </div>
+            <div className={styles.where} style={{opacity: getOpacity('where')}}>
+                <FontAwesomeIcon icon={faLocationDot} className={styles.fa}/>
+                <a href="#where" className={styles.link}
+                   onMouseEnter={() => handleMouseEnter('where')}
+                   onMouseLeave={handleMouseLeave}>
+                    <span className={styles.w}>W</span>here
+                </a>
+            </div>
+            <div className={styles.when} style={{opacity: getOpacity('when')}}>
+                <FontAwesomeIcon icon={faCalendarDays} className={styles.fa}/>
+                <a href="#when" className={styles.link}
+                   onMouseEnter={() => handleMouseEnter('when')}
+                   onMouseLeave={handleMouseLeave}>
+                    <span className={styles.w}>W</span>hen
+                </a>
+
+            </div>
+        </div>
+    );
 };
 
-  export default SideNavigation;
+export default SideNavigation;

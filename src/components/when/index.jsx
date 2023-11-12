@@ -1,4 +1,4 @@
-import React from "react";
+'use client'
 import Image from "next/image";
 import styles from "./when.module.scss";
 import SideNavigation from '../SideNavigation/index';
@@ -7,7 +7,7 @@ import calendar from "../../app/assets/Calendar.png";
 function When() {
     return (
         <>
-            <div className={styles.container}>
+            <div id="when" className={styles.container}>
                 <div className={styles.topSection}>
                     <div className={styles.sideNav}>
                         <SideNavigation opacities={{whoOp: 0.1, whatOp: 0.2, whereOp: 0.3, whenOp: 1}}/>

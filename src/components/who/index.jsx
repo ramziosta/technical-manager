@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./who.module.scss";
@@ -9,7 +10,7 @@ import Swiper from "../Swiper/index";
 function Who() {
   return (
     <>
-      <div className={styles.container}>
+      <div id="who" className={styles.container}>
         <div className={styles.mainSection}>
         {/* about me header */}
         <div className={styles.aboutHeader}>

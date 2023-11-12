@@ -1,4 +1,4 @@
-import React from "react";
+'use client'
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./what.module.scss";
@@ -17,13 +17,13 @@ import image2 from "../../app/assets/building.png";
 
 const HeaderSection = () => {
     return (
-        <>
+        <div id="what">
             {/*//> Done What Header */}
             <div className={styles.headerSection}>
                 {/* left section */}
                 <div className={styles.topSection}>
                     <div className={styles.leftSection}>
-              <SideNavigation opacities={{ whoOp: 0.1, whatOp:1.0, whereOp: 0.3, whenOp: 0.2 }} />
+                        <SideNavigation opacities={{whoOp: 0.1, whatOp: 1.0, whereOp: 0.3, whenOp: 0.2}}/>
                     </div>
 
                     {/* Right Section */}
@@ -48,7 +48,7 @@ const HeaderSection = () => {
                     </h2>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
@@ -122,7 +122,7 @@ const MiddleSection = () => {
 
             <div className={styles.h3}>
                 <h3>I Don&apos;t Just Manage;
-                    <br />I Get The Job Done!</h3>
+                    <br/>I Get The Job Done!</h3>
             </div>
 
             {/* //? Text Section */}
@@ -142,8 +142,8 @@ const MiddleSection = () => {
                         <br/>
                     </p>
                     <p className={styles.strong}><strong>
-                            how do you ensure you&apos;re always at the forefront?
-                        </strong>
+                        how do you ensure you&apos;re always at the forefront?
+                    </strong>
                     </p>
                 </div>
                 <div className={styles.rightText}>

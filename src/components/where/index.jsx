@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./where.module.scss";
@@ -9,7 +10,7 @@ import nyc from "../../app/assets/nyc.png";
 function Where() {
     return (
         <>
-            <div className={styles.container}>
+            <div  className={styles.container}>
                 <div className={styles.topContainer}>
                     <div className={styles.navigationAndText}>
                         <div className={styles.sideNavigation}>
@@ -34,7 +35,7 @@ function Where() {
                             </div>
                         </div>
 
-                        <h3 className={styles.workWithMe}>Work With Me Anywhere.</h3>
+                        <h3 id="where" className={styles.workWithMe}>Work With Me Anywhere.</h3>
                         <div className={styles.textSection}>
                             <p>
                                 Offering services remotely globally and on-location in{" "}
