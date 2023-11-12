@@ -45,9 +45,10 @@
         font-family: var(--font-family-merriweather);
         letter-spacing: 2px;
 
+
         p {
           line-height: 40px;
-          margin: 0 auto;
+
 
         }
 
@@ -126,26 +127,26 @@
   .workWithMe {
     margin: 0 !important;
     text-align: center;
-
-
   }
+
   .images {
     flex: 2;
-
     .nyc {
       width: 500px;
     }
   }
+
   .textSection p {
-    margin: 0 auto;
+
+    margin: 0 auto !important;
     width: 800px;
   }
+
   .navigationAndText {
     width: 500px;
     text-align: center;
-
-
   }
+
   .bottomContainer {
     display: flex;
     flex-direction: column;
@@ -165,7 +166,7 @@
       }
 
       .textSection {
-        margin: 0 auto;
+        margin: 0 auto !important;
         text-align: center;
         font-size: var(--font-size-l);
       }
@@ -205,7 +206,7 @@
       }
 
       .textSection {
-        margin: 2rem 0;
+        margin: 2rem 0!important;
       }
     }
 

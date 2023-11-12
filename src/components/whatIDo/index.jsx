@@ -315,7 +315,7 @@ const ServicesSection = () => {
 export default function What() {
     return (
         <>
-            <HeaderSection/>
+           <HeaderSection/>
             <MiddleSection/>
             <BottomSection/>
             <ServicesSection/>

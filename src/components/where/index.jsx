@@ -6,7 +6,7 @@ import styles from "./where.module.scss";
 import SideNavigation from "../SideNavigation/index";
 import desk from "../../app/assets/desk.png";
 import nyc from "../../app/assets/nyc.png";
-
+import cities from "../../app/assets/cities.png";
 function Where() {
     return (
         <>
