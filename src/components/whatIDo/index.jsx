@@ -13,7 +13,12 @@ import {
 } from "@chakra-ui/react";
 import image1 from "../../app/assets/portfolio2.png";
 import image2 from "../../app/assets/building.png";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faIdCard,
+  faMicrochip,
+  faChartSimple,faNetworkWired
+} from "@fortawesome/free-solid-svg-icons";
 
 const HeaderSection = () => {
     return (
@@ -199,10 +204,10 @@ const ServicesSection = () => {
                                     <Box as="span" flex="1" textAlign="left">
                                         <p className={styles.boxTitle}>
                                             {" "}
-                                            {/* <FontAwesomeIcon
+                                            <FontAwesomeIcon
                         icon={faMicrochip}
                         style={styles.icons}
-                      />{" "} */}
+                      />{" "}
                                             Digital & Web Services
                                         </p>
                                     </Box>
@@ -226,10 +231,10 @@ const ServicesSection = () => {
                                     <Box as="span" flex="1" textAlign="left">
                                         <div className={styles.boxTitle}>
                                             {" "}
-                                            {/* <FontAwesomeIcon
+                                         <FontAwesomeIcon
                         icon={faChartSimple}
                         style={styles.icons}
-                      />{" "} */}
+                      />{" "}
                                             Project Management
                                         </div>
                                     </Box>
@@ -253,7 +258,7 @@ const ServicesSection = () => {
                                 <AccordionButton className={styles.accordionButton}>
                                     <Box as="span" flex="1" textAlign="left">
                                         <div className={styles.boxTitle}>
-                                            {/* Insert appropriate icon here if needed */}
+                                              <FontAwesomeIcon icon={faNetworkWired} style={styles.icons} />{" "}
                                             IT Support Services
                                         </div>
                                     </Box>
@@ -277,7 +282,7 @@ const ServicesSection = () => {
                                 <AccordionButton className={styles.accordionButton}>
                                     <Box as="span" flex="1" textAlign="left">
                                         <div className={styles.boxTitle}>
-                                            {/* <FontAwesomeIcon icon={faIdCard} style={styles.icons} />{" "} */}
+                                         <FontAwesomeIcon icon={faIdCard} style={styles.icons} />{" "}
                                             Administrative Services
                                         </div>
                                     </Box>

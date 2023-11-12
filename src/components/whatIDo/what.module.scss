@@ -59,13 +59,14 @@
     }
   }
 }
+
 .middleSection {
   display: flex;
   flex-direction: row;
 
   .listContainer {
     flex: 1;
-    margin: 4rem 5rem ;
+    margin: 4rem 5rem;
 
 
     .text {
@@ -117,12 +118,14 @@
     }
   }
 }
+
 .h3 {
   text-align: center;
   color: var(--red);
   font-size: var(--font-size-xxl);
   font-family: var(--font-family-pp-neue-montreal-bold);
 }
+
 .h3Div {
   height: 140px;
 
@@ -149,6 +152,7 @@
     height: 15px;
   }
 }
+
 .textContainer {
   margin: 3rem 0;
   display: flex;
@@ -166,9 +170,10 @@
     margin: 0 auto;
     max-width: 550px;
   }
-   .strong {
-     margin: 2rem 0 0 3rem;
-   }
+
+  .strong {
+    margin: 2rem 0 0 3rem;
+  }
 
   strong {
     position: relative;
@@ -179,6 +184,7 @@
     top: 3px;
   }
 }
+
 .bottomSection {
   margin: 9rem 0;
 
@@ -216,10 +222,12 @@
     }
   }
 }
+
 .servicesContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   .servicesH2 {
     h2 {
       text-align: right;
@@ -230,6 +238,7 @@
       top: 70px;
     }
   }
+
   .silverContainer {
     position: relative;
     z-index: 5;
@@ -237,6 +246,7 @@
     height: 500px;
     font-family: var(--font-family-pp-neue-montreal-bold);
     font-size: var(--font-size-l);
+
     h2 {
       color: var(--grey5);
       -webkit-text-stroke: 1.5px var(--red);
@@ -244,6 +254,7 @@
       letter-spacing: 5px;
       margin: 30px 0 20px 90px;
     }
+
     .accordion {
       border: white solid 4px;
       background-color: var(--grey5);
@@ -281,6 +292,7 @@
         padding: 30px 0;
       }
     }
+
     .accordion2 {
       border-left: white solid 4px;
       border-right: white solid 4px;
@@ -318,9 +330,11 @@
         padding: 30px 0;
       }
     }
+
     .accordion3 {
       border-color: var(--white);
       border-width: 4px 4px 0;
+
       .accordionButton {
         background-color: var(--grey5);
 
@@ -355,6 +369,7 @@
       }
     }
   }
+
   .linkContainer {
     padding: 10px 0;
     display: flex;
@@ -582,8 +597,11 @@
     margin: 0 auto;
 
     .leftText {
-      margin: 5rem 0 ;
-      .strong {margin: 2rem 0 0 0}
+      margin: 5rem 0;
+
+      .strong {
+        margin: 2rem 0 0 0
+      }
     }
   }
   .servicesContainer {
@@ -615,6 +633,9 @@
     .boxTitle {
       padding: 1rem 2rem !important;
       font-size: var(--font-size-l) !important;
+      text-align: center;
+
+
     }
   }
   .accordion3 .list {

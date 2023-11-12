@@ -11,7 +11,7 @@ function Hero() {
   const width = "430";
   return (
     <>
-      <div className={styles.hero}>
+      <div id="hero" className={styles.hero}>
         {/* //> Left Section */}
 
         <div className={styles.leftSection}>

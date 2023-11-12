@@ -6,7 +6,7 @@ import styles from "./where.module.scss";
 import SideNavigation from "../SideNavigation/index";
 import desk from "../../app/assets/desk.png";
 import nyc from "../../app/assets/nyc.png";
-import cities from "../../app/assets/cities.png";
+
 function Where() {
     return (
         <>
@@ -40,7 +40,7 @@ function Where() {
                             <p>
                                 Offering services remotely globally and on-location in{" "}
                                 <span className={styles.bold}>New York City</span>
-                                {/*Offering services remotely globally and on-location in{" "}*/}
+                                {/*Offering services remotely globally and on-location in*/}
                                 {/*<span className={`${styles.red} ${styles.bold}`}>New York City</span>.*/}
                             </p>
                             <p> Open to relocation for the right opportunity.</p>
