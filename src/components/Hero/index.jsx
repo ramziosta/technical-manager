@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import ramzi from "../../app/assets/PortfolioImage.png";
+import ramzi from "../../app/assets/hero1.png";
 import styles from "./hero.module.scss";
 
 //this is a comment

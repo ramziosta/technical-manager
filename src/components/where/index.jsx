@@ -4,13 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./where.module.scss";
 import SideNavigation from "../SideNavigation/index";
-import desk from "../../app/assets/desk.png";
 import nyc from "../../app/assets/nyc.png";
 
 function Where() {
     return (
         <>
-            <div  className={styles.container}>
+            <div className={styles.container}>
                 <div className={styles.topContainer}>
                     <div className={styles.navigationAndText}>
                         <div className={styles.sideNavigation}>
@@ -22,20 +21,17 @@ function Where() {
                                     alt="new york"
                                     className={styles.nyc}
                                 />
-                                <Image
-                                    src={desk}
-                                    width={475}
-                                    height={250}
-                                    alt="working on desk"
-                                    className={styles.desk}
-                                />
+                                <video src="/video/videoloop.mp4" width={500} height={300} muted loop autoPlay
+                                       className={styles.desk}></video>
+
                             </div>
+                            <h3 id="where" className={styles.workWithMe}>Work With Me Anywhere.</h3>
                             <div className={styles.sideNav}>
                                 <SideNavigation opacities={{whoOp: 0.2, whatOp: 0.3, whereOp: 1.0, whenOp: 0.1}}/>
                             </div>
                         </div>
 
-                        <h3 id="where" className={styles.workWithMe}>Work With Me Anywhere.</h3>
+
                         <div className={styles.textSection}>
                             <p>
                                 Offering services remotely globally and on-location in{" "}

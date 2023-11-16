@@ -21,6 +21,7 @@
         position: relative;
         top: -100px;
         right: 200px;
+        border-bottom: red solid 10px;
       }
     }
 
@@ -38,6 +39,7 @@
         color: var(--red);
         font-family: var(--font-family-pp-neue-montreal-bold);
         margin: 0 0 50px 100px;
+        text-align: center;
       }
 
       .textSection {

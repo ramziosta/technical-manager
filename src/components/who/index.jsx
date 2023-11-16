@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./who.module.scss";
 import SideNavigation from "../SideNavigation/index";
-import portfolio2 from "../../app/assets/AboutMePic.png";
+import portfolio2 from "../../app/assets/who1.png";
 import Swiper from "../Swiper/index";
 
 function Who() {

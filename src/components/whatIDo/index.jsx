@@ -11,7 +11,7 @@ import {
     AccordionIcon,
     Box,
 } from "@chakra-ui/react";
-import image1 from "../../app/assets/portfolio2.png";
+import image1 from "../../app/assets/work2.png";
 import image2 from "../../app/assets/building.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
