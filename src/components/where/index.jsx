@@ -59,7 +59,7 @@ function Where() {
 
                     <div className={styles.rightSection}>
                         <div className={styles.bookAConsultation}>
-                            <Link href="">
+                            <Link href="https://calendly.com/ramziosta">
                                 Book a Consultation.
                             </Link>
                         </div>

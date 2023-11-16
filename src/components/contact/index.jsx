@@ -43,7 +43,7 @@ function Contact() {
                 {!isFormSubmitted ? (
                     <>
                         <h2 className={styles.header}>Contact Me</h2>
-                        <div>
+                        <div id="contact">
                             <form ref={form} onSubmit={sendEmail} className={styles.form}>
 
                                 <div className={styles.formBorder}>

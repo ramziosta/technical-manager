@@ -42,7 +42,7 @@ function Hero() {
             </div>
           </div>
           <div className={styles.ctaButton}>
-            <Link href="/contact"> Start Now</Link>
+            <a href="#contact"> Start Now</a>
           </div>
       
 

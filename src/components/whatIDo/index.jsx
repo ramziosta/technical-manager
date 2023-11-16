@@ -308,7 +308,7 @@ const ServicesSection = () => {
 
                 </div>
                 <div className={styles.linkContainer}>
-                    <Link className={styles.link} href="/services">
+                    <Link className={styles.link} href="https://www.upwork.com/freelancers/~0146bc44c0a92a565d?viewMode=1">
                         More About My Services
                     </Link>
                 </div>

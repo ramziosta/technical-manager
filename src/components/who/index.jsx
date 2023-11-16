@@ -60,7 +60,7 @@ function Who() {
             <div className={styles.redContainer}>
              </div>
             <div className={styles.bioCTA}>
-              <Link href="/about">Learn More About Me</Link>
+              <Link href="https://www.linkedin.com/in/ramziosta/">Learn More About Me</Link>
             </div>
           </div>
         </div>
