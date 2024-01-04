@@ -2,6 +2,7 @@ import type {Metadata} from 'next'
 import './globals.css'
 import Navbar from '../components/Navbar/index';
 import React from "react";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
     title: 'Ramzi Osta',
@@ -19,7 +20,7 @@ export default function RootLayout({
 
         <Navbar />
             {children}
-
+        <Footer />
         </body>
         </html>
     )

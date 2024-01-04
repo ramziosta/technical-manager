@@ -4,7 +4,6 @@ import What from "../components/whatIDo/index";
 import Where from "../components/where/index";
 import When from "../components/when/index";
 import Contact from "../components/contact/index";
-import Footer from "../components/Footer/index";
 
 
 export default async function Home() {
@@ -18,7 +17,7 @@ export default async function Home() {
             <Where />
             <When />
             <Contact />
-            <Footer />
+
 
         </>
     );

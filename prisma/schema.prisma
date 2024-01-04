@@ -7,14 +7,14 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Product {
+model Image {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
-  description String
   imageUrl    String
-  name        String
-  price       Int
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  title       String
+  description String?
+  alt         String?
+  group       String?
+  tags        String[]
 
-  @@map("products")
+  @@map("images")
 }
